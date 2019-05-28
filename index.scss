@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap&subset=korean");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input,
+select {
+  padding: 0;
+  margin: 0;
+  appearance: none;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+}
+button {
+  border: none;
+  box-shadow: none;
+}
+
+/* CSS Start */
+$background-url: "rectangle.png";
+$main-font: "Noto Sans KR", sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
+}
+
+.main-search {
+  background: url($background-url);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  .main-search__inner {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.inner {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: #fff;
+  max-width: 460px;
+  padding: 24px 20px;
+  .box__title {
+    font-size: 26px;
+    margin-bottom: 14px;
+  }
+  .box__description {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.39;
+  }
+}
+
+.form {
+  .form__form-item {
+    margin-top: 20px;
+  }
+}
+
+.form-item {
+  .form-item__label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    display: block;
+  }
+  .form-item__input,
+  .form-item__select {
+    display: block;
+    width: 100%;
+    border: 1px solid #d5d2d2;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 13px;
+    color: #000;
+    background-color: #fff;
+  }
+  .form-item__button {
+    margin-top: 32px;
+  }
+}
+.form-item_align_row {
+  display: flex;
+  width: 100%;
+  > div {
+    flex: 1;
+    width: 50%;
+  }
+}
+
+.button {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #ff5a60;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+}

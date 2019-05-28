@@ -18,49 +18,69 @@
     />
     <meta property="og:title" content="Airbnb" />
     <title>Airbnb</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <section>
-      <div>
-        <h2>에어비앤비에서 한국의 숙소를 찾아보세요</h2>
-        <p>
-          혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체
-          숙소까지, 에어비앤비엔 다 있습니다.
-        </p>
-        <form action="get">
-          <ul>
-            <li>
-              <label for="destination">목적지</label>
-              <input id="destination" type="text" placeholder="모든 위치" />
-            </li>
-            <li>
-              <label for="check-in">체크인</label>
-              <input id="check-in" type="date" />
-              <label for="check-out">체크아웃</label>
-              <input id="check-out" type="date" />
-            </li>
-            <li>
-              <label for="adult">어른</label>
-              <select name="adult" id="adult">
-                <option value="0">어른 0명</option>
-                <option value="1">어른 1명</option>
-                <option value="2">어른 2명</option>
-              </select>
-              <label for="kid">어린이</label>
-              <select name="kid" id="kid">
-                <option value="0">어린이 0명</option>
-                <option value="1">어린이 1명</option>
-                <option value="2">어린이 2명</option>
-              </select>
-            </li>
-            <li>
-              <button type="submit">검색</button>
-            </li>
-          </ul>
-        </form>
+    <section class="main-search">
+      <div class="inner main-search__inner">
+        <div class="box">
+          <h2 class="box__title">에어비앤비에서 한국의 숙소를 찾아보세요</h2>
+          <p class="box__description">
+            혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집
+            전체 숙소까지, 에어비앤비엔 다 있습니다.
+          </p>
+          <form action="get">
+            <ul class="form box__form">
+              <li class="form-item form__form-item">
+                <label for="destination" class="form-item__label">목적지</label>
+                <input
+                  type="text"
+                  id="destination"
+                  class="form-item__input"
+                  placeholder="모든 위치"
+                />
+              </li>
+              <li class="form-item form-item_align_row form__form-item">
+                <div>
+                  <label for="check-in" class="form-item__label">체크인</label>
+                  <input type="date" id="check-in" class="form-item__input" />
+                </div>
+                <div>
+                  <label for="check-out" class="form-item__label"
+                    >체크아웃</label
+                  >
+                  <input type="date" id="check-out" class="form-item__input" />
+                </div>
+              </li>
+              <li class="form-item form-item_align_row form__form-item">
+                <div>
+                  <label for="adult" class="form-item__label">어른</label>
+                  <select name="adult" id="adult" class="form-item__select">
+                    <option value="0">어른 0명</option>
+                    <option value="1">어른 1명</option>
+                    <option value="2">어른 2명</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="kid" class="form-item__label">어린이</label>
+                  <select name="kid" id="kid" class="form-item__select">
+                    <option value="0">어린이 0명</option>
+                    <option value="1">어린이 1명</option>
+                    <option value="2">어린이 2명</option>
+                  </select>
+                </div>
+              </li>
+              <li class="form-item form__form-item">
+                <button type="submit" class="button form-item__button">
+                  검색
+                </button>
+              </li>
+            </ul>
+          </form>
+        </div>
       </div>
     </section>
-    <section>
+    <section class="review">
       <h2>한국 숙소에 직접 다녀간 게스트의 후기</h2>
       <p>
         한국의 숙소는 <strong>31,500,000개</strong> 이상의 후기에서 별 5개중
