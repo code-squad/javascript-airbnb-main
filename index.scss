@@ -142,7 +142,8 @@ button {
 }
 
 /* CSS Start */
-$background-url: "rectangle.png";
+$background-url: "background-image.png";
+$star-icon-url: "star-icon.png";
 $main-font: "Noto Sans KR", sans-serif;
 
 * {
@@ -176,13 +177,14 @@ body {
   max-width: 460px;
   padding: 24px 20px;
   .box__title {
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 14px;
   }
   .box__description {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.39;
+    word-break: keep-all;
   }
 }
 
@@ -233,4 +235,82 @@ body {
   border-radius: 4px;
   font-size: 15px;
   font-weight: bold;
+}
+
+.review {
+  .review__inner {
+    padding: 40px 0;
+  }
+  .review__title {
+    font-size: 20px;
+    margin-bottom: 14px;
+    font-weight: bold;
+  }
+  .review__description {
+    font-size: 18px;
+    padding-left: 30px;
+    margin-bottom: 28px;
+    font-weight: 300;
+    position: relative;
+    strong {
+      font-weight: bold;
+    }
+    &:before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      display: block;
+      background-image: url($star-icon-url);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.content-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 320px;
+  .card__image-container {
+    display: block;
+    margin-bottom: 22px;
+    img {
+      width: 100%;
+    }
+  }
+  .card__rating {
+    color: #018488;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .card__description {
+    margin-bottom: 20px;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 300;
+    word-break: keep-all;
+  }
+}
+
+.user-info {
+  display: flex;
+  .user-info__thumbnail {
+    margin-right: 10px;
+    img {
+      width: 42px;
+    }
+  }
+  .user-info__personal-info {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+    strong {
+      font-weight: bold;
+    }
+  }
 }

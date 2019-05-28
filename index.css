@@ -162,7 +162,7 @@ body {
 }
 
 .main-search {
-  background: url("rectangle.png");
+  background: url("background-image.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -191,7 +191,7 @@ body {
 }
 
 .box .box__title {
-  font-size: 26px;
+  font-size: 24px;
   margin-bottom: 14px;
 }
 
@@ -199,6 +199,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.39;
+  word-break: keep-all;
 }
 
 .form .form__form-item {
@@ -251,6 +252,101 @@ body {
   color: #fff;
   border-radius: 4px;
   font-size: 15px;
+  font-weight: bold;
+}
+
+.review .review__inner {
+  padding: 40px 0;
+}
+
+.review .review__title {
+  font-size: 20px;
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+
+.review .review__description {
+  font-size: 18px;
+  padding-left: 30px;
+  margin-bottom: 28px;
+  font-weight: 300;
+  position: relative;
+}
+
+.review .review__description strong {
+  font-weight: bold;
+}
+
+.review .review__description:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-image: url("star-icon.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.content-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  width: 320px;
+}
+
+.card .card__image-container {
+  display: block;
+  margin-bottom: 22px;
+}
+
+.card .card__image-container img {
+  width: 100%;
+}
+
+.card .card__rating {
+  color: #018488;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card .card__description {
+  margin-bottom: 20px;
+  line-height: normal;
+  font-size: 14px;
+  font-weight: 300;
+  word-break: keep-all;
+}
+
+.user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.user-info .user-info__thumbnail {
+  margin-right: 10px;
+}
+
+.user-info .user-info__thumbnail img {
+  width: 42px;
+}
+
+.user-info .user-info__personal-info {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.user-info .user-info__personal-info strong {
   font-weight: bold;
 }
 /*# sourceMappingURL=index.css.map */
