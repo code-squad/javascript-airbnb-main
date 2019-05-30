@@ -146,6 +146,8 @@ button {
 /* CSS Start */
 $background-url: "background-image.png";
 $star-icon-url: "star-icon.png";
+$down-arrow-icon-url: "angle-arrow-down.png";
+
 $main-font: "Noto Sans KR", sans-serif;
 
 $color-coral: #ff5a60;
@@ -220,10 +222,13 @@ body {
     color: $color-black;
     background-color: $color-white;
   }
-  .form-item__button {
-    margin-top: 32px;
+  .form-item__select {
+    background: url($down-arrow-icon-url) no-repeat;
+    background-size: 16px 16px;
+    background-position: right 20px top 50%;
   }
 }
+
 .form-item_align_row {
   display: flex;
   width: 100%;
