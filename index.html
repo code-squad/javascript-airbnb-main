@@ -4,37 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
   <section class="header__container">
     <div class="header__bookForm">
-      <h2>에어비앤비에서 한국의 숙소를 찾아보세요.</h2>
-      <p>혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체 숙소까지, 에어비앤비엔 다 있습니다.</p>
+      <h2 class="header__bookFormTitle">에어비앤비에서 한국의 숙소를 찾아보세요.</h2>
+      <p class="header_bookFormDesc">혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체 숙소까지, 에어비앤비엔 다 있습니다.</p>
       <form action="#" method="POST">
         <label for="destination">목적지</label>
         <input type="text" name="destination" id="destination" placeholder="모든 위치" />
-        <label for="check-in">체크인</label>
-        <input type="date" name="check-in" id="check-in">
-        <label for="check-out">체크아웃</label>
-        <input type="date" name="check-out" id="check-out">
-        <label for="adult-count">어른</label>
-        <select id="adult-count">
-          <option disabled selected>인원 수 선택</option>
-          <option value="1">어른 1명</option>
-          <option value="2">어른 2명</option>
-          <option value="3">어른 3명</option>
-          <option value="4">어른 4명</option>
-        </select>
-        <label for="child-count">어린이</label>
-        <select id="child-count">
-          <option disabled selected>인원 수 선택</option>
-          <option value="1">어린이 1명</option>
-          <option value="2">어린이 2명</option>
-          <option value="3">어린이 3명</option>
-          <option value="4">어린이 4명</option>
-        </select>
-        <input type="submit" value="검색">
+        <div class="header_bookFormCheckDate">
+          <div>
+            <label for="check-in">체크인</label>
+            <input type="date" name="check-in" id="check-in">
+          </div>
+          <div>
+            <label for="check-out">체크아웃</label>
+            <input type="date" name="check-out" id="check-out">
+          </div>
+        </div>
+        <div class="header_bookFormPeopleCounter">
+          <div>
+            <label for="adult-count">어른</label>
+            <select id="adult-count">
+              <option disabled selected>인원 수 선택</option>
+              <option value="1">어른 1명</option>
+              <option value="2">어른 2명</option>
+              <option value="3">어른 3명</option>
+              <option value="4">어른 4명</option>
+            </select>
+          </div>
+          <div>
+            <label for="child-count">어린이</label>
+            <select id="child-count">
+              <option disabled selected>인원 수 선택</option>
+              <option value="1">어린이 1명</option>
+              <option value="2">어린이 2명</option>
+              <option value="3">어린이 3명</option>
+              <option value="4">어린이 4명</option>
+            </select>
+          </div>
+        </div>
+        <input type="submit" value="검색" class="header__bookFormSubmit">
       </form>
     </div>
   </section>
@@ -43,45 +57,76 @@
       <h4 class="review__contentsTitle">
         한국 숙소에 직접 다녀간 게스트의 후기
       </h4>
-      <img src="#" alt="star" class="review__contentsStar">
-      <p>한국의 숙소는 <strong>31,500,000개</strong> 이상의 후기에서 별 5개중 <strong>4.8개</strong>를 받았습니다.</p>
+      <div>
+        <img src="./images/ic-stars-24-px.png" alt="star" class="review__contentsStar">
+        <p class="review__contentsDesc">한국의 숙소는 <strong>31,500,000개</strong> 이상의 후기에서 별 5개중 <strong>4.8개</strong>를
+          받았습니다.</p>
+      </div>
     </div>
     <div class="review__contentsItemList">
       <div class="review__contentsItem">
         <figure class="review__contentsItemImage">
-          <img src="#" alt="숙소 사진">
+          <img src="./images/crong_review.png" alt="숙소 사진" width="100%" />
         </figure>
         <section class="review__contentsItemDetails">
-          <img src="#" alt="score">
+          <div class="review__contentsItemScore">
+            <i class="material-icons star">star</i>
+            <i class="material-icons star">star</i>
+            <i class="material-icons star">star</i>
+            <i class="material-icons star">star</i>
+          </div>
           <p>정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..</p>
-          <img src="#" alt="profile">
-          <p><strong>Crong</strong></p>
-          <p>프랑스</p>
+          <div>
+            <img src="./images/crong.png" alt="profile">
+            <div>
+              <p><strong>Crong</strong></p>
+              <p>프랑스</p>
+            </div>
+          </div>
         </section>
       </div>
       <div class="review__contentsItem">
         <figure class="review__contentsItemImage">
-          <img src="#" alt="숙소 사진">
+          <img src="./images/honux_review.png" alt="숙소 사진" width="100%" />
         </figure>
         <section class="review__contentsItemDetails">
-          <img src="#" alt="score">
+          <div class="review__contentsItemScore">
+            <i class="material-icons star">star</i>
+            <i class="material-icons star">star</i>
+            <i class="material-icons star">star</i>
+            <i class="material-icons star">star</i>
+            <i class="material-icons star">star</i>
+          </div>
           <p>Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히 차분하고 따스한 도시인 Cambria에 도착해서 Ammy의 집에 도착을 했습니다. Lucy와 Ammy는 기대이상으로 별로
           </p>
-          <img src="#" alt="profile">
-          <p><strong>Honux</strong></p>
-          <p>호주</p>
+          <div>
+            <img src="./images/honux.png" alt="profile">
+            <div>
+              <p><strong>Honux</strong></p>
+              <p>호주</p>
+            </div>
+          </div>
         </section>
       </div>
       <div class="review__contentsItem">
         <figure class="review__contentsItemImage">
-          <img src="#" alt="숙소 사진">
+          <img src="./images/jk_review.png" alt="숙소 사진" width="100%" />
         </figure>
         <section class="review__contentsItemDetails">
-          <img src="#" alt="score">
+          <div class="review__contentsItemScore">
+            <i class="material-icons star">star</i>
+            <i class="material-icons star">star</i>
+            <i class="material-icons star">star</i>
+            <i class="material-icons star">star</i>
+          </div>
           <p>산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무 좋았다. 사진과 같이 깔끔하고 지내기에 불편함이 없었다. 호스트 역시 친절하고 따뜻하게 대해주었습니다.</p>
-          <img src="#" alt="profile">
-          <p><strong>JK</strong></p>
-          <p>한국</p>
+          <div>
+            <img src="./images/jk.png" alt="profile">
+            <div>
+              <p><strong>JK</strong></p>
+              <p>한국</p>
+            </div>
+          </div>
         </section>
       </div>
     </div>
