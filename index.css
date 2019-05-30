@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  font-size: 0.7rem;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.header__container {
+  width: 100%;
+  height: 480px;
+  background-image: url(./images/rectangle.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.header__bookForm {
+  background-color: #fff;
+  width: 396px;
+  height: 358px;
+  position: absolute;
+  left: 16%;
+  top: 12.5%;
+  padding: 0 11px;
+}
+
+.header__bookFormTitle,
+.header_bookFormDesc {
+  padding: 7px 0;
+}
+
+#destination,
+.header_bookFormCheckDate input,
+.header_bookFormPeopleCounter select {
+  width: 100%;
+  padding: 0.4rem;
+  margin: 0.4rem 0;
+}
+
+.header_bookFormCheckDate,
+.header_bookFormPeopleCounter {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header_bookFormCheckDate > div,
+.header_bookFormPeopleCounter > div {
+  width: 50%;
+}
+
+.header__bookFormSubmit {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: #ff5a60;
+  height: 1.5rem;
+  border: 1px solid #ff5a60;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+}
+
+.review__container {
+  margin: 2rem 16%;
+  min-width: 828px;
+}
+
+.review__contentsTitle {
+  font-size: 20px;
+}
+
+.review__contentsTitle + div {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.review__contentsDesc {
+  font-size: 18px;
+  margin-left: 0.5rem;
+}
+
+.review__contentsItemList {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.review__contentsItem {
+  width: 33%;
+}
+
+.review__contentsItem + .review__contentsItem {
+  margin-left: 1rem;
+}
+
+.review__contentsItemScore {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.material-icons.star {
+  font-size: 1rem;
+  color: #018488;
+}
+
+.review__contentsItemDetails > p {
+  font-size: 14px;
+}
+
+.review__contentsItemDetails > div:nth-last-child(1) {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.review__contentsItemDetails > div:nth-last-child(1) > div {
+  margin-left: 0.5rem;
+}
