@@ -7,7 +7,7 @@
     width:1440px;
     height:620px;
     background:url('../images/rectangle.jpg') no-repeat 0 0;
-    padding-top: 60px;
+    padding-top: 45px;
 }
 
 .search-form {
@@ -37,6 +37,7 @@
     display: block;
     margin-bottom: 7px;
     font-weight: bold; 
+    line-height: 1.5;
 }
 
 .form_element  input,
@@ -96,6 +97,10 @@
     font-size: 18px;
     /* line-height: 36px; */
     background: url(../images/stars-24-px.png) no-repeat 0 0px;
+}
+
+select {
+    background: #fff;
 }
 
 select, select > option {
