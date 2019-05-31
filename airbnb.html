@@ -5,84 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>airbnb</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
-
   <body>
-    <div>
-      <section class="top">
-        <div><img src="..." alt="background" /></div>
-        <div class="whitebox">
-          <div class="first">
-            <h1>에어비앤비에서 한국의 숙소를 찾아보세요</h1>
-          </div>
-          <div class="second">
-            <p>
+    <div id="wrap">
+      <div class="top">
+        <div class="form-wrapper">
+          <div class="form-container">
+            <h1 class="form-container__title">
+              에어비앤비에서 한국의 숙소를 찾아보세요
+            </h1>
+            <p class="form-container__message">
               혼자하는 여행에 적합한 개인실부터 여렷이 함께하는 여행에 좋은 집
               전체 숙소까지, 에어비앤비엔 다 있습니다.
             </p>
-          </div>
-          <div class="form">
             <form action="">
-              <div>
-                <label for="destination">목적지</label>
-                <input
-                  type="text"
-                  name="destination"
-                  id="destination"
-                  value="모든 위치"
-                />
-              </div>
-              <div>
-                <label for="checkin">체크인</label>
-                <input type="date" name="checkin" id="checkin" />
-              </div>
-              <div>
-                <label for="checkout">체크아웃</label>
-                <input type="date" name="checkout" id="checkout" />
-              </div>
-              <div>
-                <label for="adult">어른</label>
-                <input type="number" name="adult" id="adult" />
-              </div>
-              <div>
-                <label for="children">어린이</label>
-                <input type="number" name="children" id="children" />
-              </div>
-              <div><input type="submit" value="검색" /></div>
+              <ul class="form-container__search-box">
+                <li>
+                  <label for="destination">목적지</label>
+                  <input
+                    type="text"
+                    name="destination"
+                    id="destination"
+                    placeholder="모든 위치"
+                  />
+                </li>
+                <li>
+                  <label for="checkin">체크인</label>
+                  <input
+                    type="text"
+                    name="checkin"
+                    id="checkin"
+                    placeholder="년/월/일"
+                  />
+                </li>
+                <li>
+                  <label for="checkout">체크아웃</label>
+                  <input
+                    type="text"
+                    name="checkout"
+                    id="checkout"
+                    placeholder="년/월/일"
+                  />
+                </li>
+                <li>
+                  <label for="adult">어른</label>
+                  <select name="adult" id="adult">
+                    <option value="0">어른 0명</option>
+                    <option value="1">어른 1명</option>
+                    <option value="2">어른 2명</option>
+                  </select>
+                </li>
+                <li>
+                  <label for="child">어린이</label>
+                  <select name="child" id="child">
+                    <option value="0">어린이 0명</option>
+                    <option value="1">어린이 1명</option>
+                    <option value="2">어린이 2명</option>
+                  </select>
+                </li>
+                <li>
+                  <input type="submit" value="검색" id="search-button" />
+                </li>
+              </ul>
             </form>
           </div>
         </div>
-      </section>
-      <section class="bottom">
-        <div>
-          <h2>한국 숙소에 직접 다녀간 게스트의 후기</h2>
-        </div>
-        <div>
-          <img src="..." alt="star" />
-          <p>
-            한국의 숙소는 31,500개 이상의 후기에서 별 5개중 4.8개를 받았습니다.
-          </p>
-        </div>
-        <div>
-          <ul>
+      </div>
+      <div class="bottom">
+        <div class="review-container">
+          <h2 class="review-container__title">
+            한국 숙소에 직접 다녀간 게스트의 후기
+          </h2>
+          <div class="review-container__message">
+            <img class="star" src="./img/star.png" alt="star" />
+            <p>
+              한국의 숙소는 <b>31,500,000개</b> 이상의 후기에서 별 5개중
+              <b>4.8개</b>를 받았습니다.
+            </p>
+          </div>
+          <ul class="review-container__contents">
             <li>
-              <div><img src="..." alt="photo" /></div>
+              <img class="review-photo" src="./img/house1.png" alt="photo" />
               <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               </div>
               <div>
-                <p>
+                <p class="review-comment">
                   정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는 상쾌함이
                   좋았습니다. 2인이서 숙박하는데에 최고의 장점을 보여주었습니다.
                   따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..
                 </p>
               </div>
-              <div>
-                <div><img src="..." alt="person" /></div>
+              <div class="profile">
+                <img src="./img/crong.png" alt="person" />
                 <div>
                   <p>Crong</p>
                   <p>프랑스</p>
@@ -90,23 +109,23 @@
               </div>
             </li>
             <li>
-              <div><img src="..." alt="photo" /></div>
+              <img class="review-photo" src="./img/house2.png" alt="photo" />
               <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               </div>
               <div>
-                <p>
+                <p class="review-comment">
                   Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히
                   차분하고 따스한 도시인 Cambria에 도착해서 Ammy의 집에 도착을
                   했습니다. Lucy와 Ammy는 기대이상으로 별로
                 </p>
               </div>
-              <div>
-                <div><img src="..." alt="person" /></div>
+              <div class="profile">
+                <img src="./img/honux.png" alt="person" />
                 <div>
                   <p>Honux</p>
                   <p>호주</p>
@@ -114,23 +133,22 @@
               </div>
             </li>
             <li>
-              <div><img src="..." alt="photo" /></div>
+              <img class="review-photo" src="./img/house3.png" alt="photo" />
               <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               </div>
               <div>
-                <p>
+                <p class="review-comment">
                   산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무
                   좋았다. 사진과 같이 깔끔하고 지내기에 불편함이 없었다. 호스트
                   역시 친절하고 따뜻하게 대해주었습니다.
                 </p>
               </div>
-              <div>
-                <div><img src="..." alt="person" /></div>
+              <div class="profile">
+                <img src="./img/JK.png" alt="person" />
                 <div>
                   <p>JK</p>
                   <p>한국</p>
@@ -139,7 +157,13 @@
             </li>
           </ul>
         </div>
-      </section>
+      </div>
     </div>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+      integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
