@@ -20,15 +20,30 @@ ol {
 a {
   text-decoration: none; }
 
+p {
+  margin: 0; }
+
+.ico {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: 100%;
+  vertical-align: middle; }
+  .ico.ico-circle-star {
+    background-image: url("../images/ico-circle-star.png"); }
+  .ico.ico-star {
+    background-image: url("../images/ico-star.png"); }
+
 #hero {
   background-image: url("../images/rectangle.png");
-  background-size: 100%;
+  background-size: cover;
   width: 100%;
   height: 620px;
   background-repeat: no-repeat; }
 
 .inner {
-  max-width: 1080px;
+  max-width: 1000px;
   margin: 0 auto;
   height: inherit; }
 
@@ -123,6 +138,77 @@ a {
     width: 100%;
     padding: 12px 20px;
     box-sizing: border-box; }
+
+.reviewContainer {
+  margin: 3.125rem 0; }
+  .reviewContainer__wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    padding: 0px; }
+  .reviewContainer__title {
+    height: 40px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 2; }
+  .reviewContainer__summary {
+    margin: 15px 0px; }
+
+.review {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  width: 320px;
+  box-sizing: border-box; }
+  .review > * {
+    margin: 10px 0px; }
+  .review__figure {
+    padding: 0px;
+    margin: 0px; }
+  .review__profileWrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center; }
+    .review__profileWrapper img {
+      width: 44px;
+      height: 44px; }
+    .review__profileWrapper .review__profile {
+      -webkit-box-flex: 1 1 auto;
+      -moz-box-flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      margin-left: 10px; }
+      .review__profileWrapper .review__profile h6 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 0.9rem; }
 
 .btn-primary {
   background-color: #ff5a60;

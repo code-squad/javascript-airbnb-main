@@ -33,16 +33,37 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
+.ico {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: 100%;
+  vertical-align: middle;
+
+  &.ico-circle-star {
+    background-image: url('../images/ico-circle-star.png');
+  }
+
+  &.ico-star {
+    background-image: url('../images/ico-star.png');
+  }
+}
+
 #hero {
   background-image: url('../images/rectangle.png');
-  background-size: 100%;
+  background-size: cover;
   width: 100%;
   height: 620px;
   background-repeat: no-repeat;
 }
 
 .inner {
-  max-width: 1080px;
+  max-width: 1000px;
   margin: 0 auto;
   height: inherit;
 }
@@ -118,6 +139,66 @@ a {
     width: 100%;
     padding: 12px 20px;
     box-sizing: border-box;
+  }
+}
+
+.reviewContainer {
+  margin: calcRem(50px) 0;
+  &__wrapper {
+    @include flexbox();
+    @include justify-content(space-between);
+    padding: 0px;
+  }
+
+  &__title {
+    height: 40px;
+    font-size: calcRem(20px);
+    font-weight: bold;
+    margin: 0px;
+    line-height: 2;
+  }
+
+  &__summary {
+    margin: 15px 0px;
+  }
+}
+
+.review {
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  width: 320px;
+  box-sizing: border-box;
+
+  & > * {
+    margin: 10px 0px;
+  }
+
+  &__figure {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  &__profileWrapper {
+    @include flexbox();
+    @include align-items(center);
+
+    img {
+      width: 44px;
+      height: 44px;
+    }
+
+    .review__profile {
+      @include flex(1 1 auto);
+      margin-left: 10px;
+
+      h6 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+    }
   }
 }
 
