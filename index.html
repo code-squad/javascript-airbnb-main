@@ -1,91 +1,162 @@
 <!DOCTYPE html>
 <html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-
-<body>
-  <section>
-    <section>
-      <h2>에어비앤비에서 한국의 숙소를 찾아보세요.</h2>
-      <p>혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체 숙소까지, 에어비앤비엔 다 있습니다.</p>
-      <form action="#" method="POST">
-        <label for="destination">목적지</label>
-        <input type="text" name="destination" id="destination" placeholder="모든 위치" />
-        <label for="check-in">체크인</label>
-        <input type="date" name="check-in" id="check-in">
-        <label for="check-out">체크아웃</label>
-        <input type="date" name="check-out" id="check-out">
-        <label for="adult-count">어른</label>
-        <select id="adult-count">
-          <option disabled selected>인원 수 선택</option>
-          <option value="1">어른 1명</option>
-          <option value="2">어른 2명</option>
-          <option value="3">어른 3명</option>
-          <option value="4">어른 4명</option>
-        </select>
-        <label for="child-count">어린이</label>
-        <select id="child-count">
-          <option disabled selected>인원 수 선택</option>
-          <option value="1">어린이 1명</option>
-          <option value="2">어린이 2명</option>
-          <option value="3">어린이 3명</option>
-          <option value="4">어린이 4명</option>
-        </select>
-        <input type="submit" value="검색">
-      </form>
-    </section>
-  </section>
-  <section>
-    <section>
-      <h4>
+  <body>
+    <header>
+      <div class="bookForm">
+        <h2 class="bookForm__Title">
+          에어비앤비에서 한국의 숙소를 찾아보세요.
+        </h2>
+        <p class="bookForm__Desc">
+          혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체
+          숙소까지, 에어비앤비엔 다 있습니다.
+        </p>
+        <form action="#" method="POST">
+          <label for="destination">목적지</label>
+          <input
+            type="text"
+            name="destination"
+            id="destination"
+            placeholder="모든 위치"
+          />
+          <div class="bookForm__CheckDate">
+            <div>
+              <label for="check-in">체크인</label>
+              <input type="date" name="check-in" id="check-in" />
+            </div>
+            <div>
+              <label for="check-out">체크아웃</label>
+              <input type="date" name="check-out" id="check-out" />
+            </div>
+          </div>
+          <div class="bookForm__PeopleCounter">
+            <div>
+              <label for="adult-count">어른</label>
+              <select id="adult-count">
+                <option disabled selected>인원 수 선택</option>
+                <option value="1">어른 1명</option>
+                <option value="2">어른 2명</option>
+                <option value="3">어른 3명</option>
+                <option value="4">어른 4명</option>
+              </select>
+            </div>
+            <div>
+              <label for="child-count">어린이</label>
+              <select id="child-count">
+                <option disabled selected>인원 수 선택</option>
+                <option value="1">어린이 1명</option>
+                <option value="2">어린이 2명</option>
+                <option value="3">어린이 3명</option>
+                <option value="4">어린이 4명</option>
+              </select>
+            </div>
+          </div>
+          <input type="submit" value="검색" class="bookForm__Submit" />
+        </form>
+      </div>
+    </header>
+    <main class="review">
+      <h4 class="review__title">
         한국 숙소에 직접 다녀간 게스트의 후기
       </h4>
-      <img src="#" alt="star">
-      <p>한국의 숙소는 <strong>31,500,000개</strong> 이상의 후기에서 별 5개중 <strong>4.8개</strong>를 받았습니다.</p>
-    </section>
-    <section>
-      <article>
-        <figure>
-          <img src="#" alt="숙소 사진">
-        </figure>
-        <section>
-          <img src="#" alt="score">
-          <p>정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..</p>
-          <img src="#" alt="profile">
-          <p><strong>Crong</strong></p>
-          <p>프랑스</p>
-        </section>
-      </article>
-      <article>
-        <figure>
-          <img src="#" alt="숙소 사진">
-        </figure>
-        <section>
-          <img src="#" alt="score">
-          <p>Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히 차분하고 따스한 도시인 Cambria에 도착해서 Ammy의 집에 도착을 했습니다. Lucy와 Ammy는 기대이상으로 별로
-          </p>
-          <img src="#" alt="profile">
-          <p><strong>Honux</strong></p>
-          <p>호주</p>
-        </section>
-      </article>
-      <article>
-        <figure>
-          <img src="#" alt="숙소 사진">
-        </figure>
-        <section>
-          <img src="#" alt="score">
-          <p>산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무 좋았다. 사진과 같이 깔끔하고 지내기에 불편함이 없었다. 호스트 역시 친절하고 따뜻하게 대해주었습니다.</p>
-          <img src="#" alt="profile">
-          <p><strong>JK</strong></p>
-          <p>한국</p>
-        </section>
-      </article>
-    </section>
-  </section>
-</body>
-
+      <div>
+        <img
+          src="./images/ic-stars-24-px.png"
+          alt="star"
+          class="review__star"
+        />
+        <p class="review__desc">
+          한국의 숙소는 <strong>31,500,000개</strong> 이상의 후기에서 별 5개중
+          <strong>4.8개</strong>를 받았습니다.
+        </p>
+      </div>
+      <ul class="review__itemList">
+        <li class="review__item">
+          <figure class="review__contentsItemImage">
+            <img src="./images/crong_review.png" alt="숙소 사진" width="100%" />
+          </figure>
+          <section class="review__contentsItemDetails">
+            <div class="review__contentsItemScore">
+              <i class="material-icons star">star</i>
+              <i class="material-icons star">star</i>
+              <i class="material-icons star">star</i>
+              <i class="material-icons star">star</i>
+            </div>
+            <p>
+              정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는 상쾌함이
+              좋았습니다. 2인이서 숙박하는데에 최고의 장점을 보여주었습니다.
+              따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..
+            </p>
+            <div>
+              <img src="./images/crong.png" alt="profile" />
+              <div>
+                <p><strong>Crong</strong></p>
+                <p>프랑스</p>
+              </div>
+            </div>
+          </section>
+        </li>
+        <li class="review__item">
+          <figure class="review__contentsItemImage">
+            <img src="./images/honux_review.png" alt="숙소 사진" width="100%" />
+          </figure>
+          <section class="review__contentsItemDetails">
+            <div class="review__contentsItemScore">
+              <i class="material-icons star">star</i>
+              <i class="material-icons star">star</i>
+              <i class="material-icons star">star</i>
+              <i class="material-icons star">star</i>
+              <i class="material-icons star">star</i>
+            </div>
+            <p>
+              Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히 차분하고
+              따스한 도시인 Cambria에 도착해서 Ammy의 집에 도착을 했습니다.
+              Lucy와 Ammy는 기대이상으로 별로
+            </p>
+            <div>
+              <img src="./images/honux.png" alt="profile" />
+              <div>
+                <p><strong>Honux</strong></p>
+                <p>호주</p>
+              </div>
+            </div>
+          </section>
+        </li>
+        <li class="review__item">
+          <figure class="review__contentsItemImage">
+            <img src="./images/jk_review.png" alt="숙소 사진" width="100%" />
+          </figure>
+          <section class="review__contentsItemDetails">
+            <div class="review__contentsItemScore">
+              <i class="material-icons star">star</i>
+              <i class="material-icons star">star</i>
+              <i class="material-icons star">star</i>
+              <i class="material-icons star">star</i>
+            </div>
+            <p>
+              산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무
+              좋았다. 사진과 같이 깔끔하고 지내기에 불편함이 없었다. 호스트 역시
+              친절하고 따뜻하게 대해주었습니다.
+            </p>
+            <div>
+              <img src="./images/jk.png" alt="profile" />
+              <div>
+                <p><strong>JK</strong></p>
+                <p>한국</p>
+              </div>
+            </div>
+          </section>
+        </li>
+      </ul>
+    </main>
+  </body>
 </html>
