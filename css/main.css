@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+@import url('reset.css');
+
+.wrap {width:1440px;margin:0 auto;}
+.search-wrap {
+    width:1440px;
+    height:620px;
+    background:url('../images/rectangle.jpg') no-repeat 0 0;
+    padding-top: 45px;
+}
+
+.search-form {
+    width: 460px;
+    background-color: white;
+    margin:0 760px 60px 220px;
+    padding: 24px 20px 28px;
+}
+
+.search-form > h1 {
+    font-size:28px;
+}
+
+.search-form > p {
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 24px
+
+}
+
+.form_row {
+    margin-top: 21px;
+    
+}
+
+.form_element > label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold; 
+    line-height: 1.5;
+}
+
+.form_element  input,
+.form_element select {
+    border: 1px solid #d5d2d2;
+    border-radius: 2px;
+    height: 40px;
+    width: 100%;
+    padding: 5px 21px 4px 19px;  
+    color: black;  
+    font-size: 13px;
+}
+
+.form_element  input[type=date] {
+    font-family: 맑은고딕;
+    font-weight: bold;
+}
+
+.form_element  input::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
+.two-column  .form_element {
+    float: left;
+    width: 50%;
+}
+
+.two-column {
+    overflow:hidden; 
+}
+
+.search-form button {
+    width: 100%; 
+    height: 40px;
+    margin-top: 32px;
+    background-color: #ff5a60;
+    color: white;
+    font-weight: bold; 
+    border: 0;
+    box-shadow: 1px 1px 1px  #d5d2d2 inset; 
+}
+
+.review-wrap {
+    max-width: 1000px;
+    margin: 40px auto 60px; 
+}
+
+.review-wrap h1 {
+    font-size: 20px;
+    height: 40px;
+}
+
+.review-wrap > p {
+    height: 40px;
+    padding-left: 23px;
+    font-size: 18px;
+    /* line-height: 36px; */
+    background: url(../images/stars-24-px.png) no-repeat 0 0px;
+}
+
+select {
+    background: #fff;
+}
+
+select, select > option {
+    font-weight: bold;
+}
+
+.review-image > img {
+    width: 320px; 
+    height: 220px;
+    margin-bottom: 20px; 
+}
+
+.star-rating {
+    margin-bottom: 10px; 
+}
+
+.comment {
+    width: 320px; 
+    font-size: 14px; 
+    line-height: 20px; 
+    font-weight: 300;
+    margin-bottom: 14px; 
+}
+
+.user > strong {
+    display: block;
+    margin-bottom: 5px; 
+}
+
+.user {
+    margin-left:10px; 
+}
+
+.user-info {
+    overflow: hidden;
+}
+
+.user-info > img, 
+.user-info > .user {
+    float: left;
+}
+
+.user-info > img {
+    width: 42px;
+    height: 42px;
+}
+
+.reviews {
+    display:flex;
+    justify-content: center; 
+}
+
+.review {
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.fas.fa-star {
+    color: #018488; 
+}
+
+
+
