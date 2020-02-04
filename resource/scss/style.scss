@@ -101,6 +101,8 @@
             display: block;
             margin-top: 22px;
             height: 18px;
+            font-size: 18px;
+            color: #018488;
         }
         .review-text {
             height: 70px;
@@ -109,11 +111,22 @@
             line-height: 1.3em
         }
         .review-user {
-            font-weight: bold;
-            font-size: 14px;
-            span {
-                display: block;
-                font-weight: normal;
+            font-size: 0;
+            .review-user-img {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .review-user-name {
+                display: inline-block;
+                margin-left: 10px;
+                font-weight: bold;
+                font-size: 14px;
+                vertical-align: middle;
+                span {
+                    display: block;
+                    margin-top:5px;
+                    font-weight: normal;
+                }
             }
         }
     }

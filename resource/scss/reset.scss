@@ -29,6 +29,7 @@ time, mark, audio, video {
     outline:0;
     font-family: $font-family-default;
     font-size:100%;
+    letter-spacing: -0.02em;
     vertical-align:baseline;
     background:transparent;
 }
@@ -62,10 +63,14 @@ a {
     margin:0;
     padding:0;
     font-size:100%;
+    color:$color-default;
+    text-decoration: none;
     vertical-align:baseline;
     background:transparent;
 }
-
+a:hover {
+    text-decoration: none;
+}
 /* change colours to suit your needs */
 ins {
     background-color:#ff9;

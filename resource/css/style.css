@@ -33,6 +33,7 @@ time, mark, audio, video {
   outline: 0;
   font-family: AppleSDGothicNeo, sans-serif;
   font-size: 100%;
+  letter-spacing: -0.02em;
   vertical-align: baseline;
   background: transparent;
 }
@@ -66,8 +67,14 @@ a {
   margin: 0;
   padding: 0;
   font-size: 100%;
+  color: #000;
+  text-decoration: none;
   vertical-align: baseline;
   background: transparent;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /* change colours to suit your needs */
@@ -294,6 +301,8 @@ select {
   display: block;
   margin-top: 22px;
   height: 18px;
+  font-size: 18px;
+  color: #018488;
 }
 
 .review-box .review-card .review-text {
@@ -304,11 +313,24 @@ select {
 }
 
 .review-box .review-card .review-user {
-  font-weight: bold;
-  font-size: 14px;
+  font-size: 0;
 }
 
-.review-box .review-card .review-user span {
+.review-box .review-card .review-user .review-user-img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.review-box .review-card .review-user .review-user-name {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.review-box .review-card .review-user .review-user-name span {
   display: block;
+  margin-top: 5px;
   font-weight: normal;
 }
