@@ -5,30 +5,34 @@
 
 body {
   width: 1440px;
-  box-sizing: border-box;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 li {
   list-style: none;
 }
 
-body main {
-  border: 1px solid blue;
+img {
+  border: none;
 }
 
-body main h1 {
+i,
+b {
+  font-weight: bold;
+  font-style: normal;
+}
+
+body > main > h1 {
   font-size: 0;
 }
 
-body main div.search {
-  height: 620px;
+body > main > div.search {
   background-image: url('img/bg.png');
-  border: 1px solid green;
+  height: 620px;
+  overflow: hidden;
 }
 
-body main div.search form {
+body > main > div.search form {
   background-color: #fff;
   margin-top: 60px;
   margin-left: 220px;
@@ -37,40 +41,39 @@ body main div.search form {
   height: 448px; /* 500 - 52 */
 }
 
-body main div.search form h2 {
+body > main > div.search > form > h2 {
   margin-bottom: 14px;
   font-size: 28px;
 }
 
-body main div.search form p {
+body > main > div.search > form > p {
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.39;
 }
 
-body main div.search form div {
+body > main > div.search > form > div {
   float: left;
   width: 50%;
 }
 
-body main div.search form div.destination {
+body > main > div.search > form > div.destination {
   width: 100%;
 }
-/**/
-body main div.search form div * {
+
+body > main > div.search > form > div * {
   display: block;
 }
 
-body main div.search form div label {
+body > main > div.search > form > div > label {
   font-size: 13px;
   font-weight: bold;
-  /* test */
   margin-bottom: 7px;
 }
 
-/* test */
-body main div.search form div input {
+body > main > div.search > form > div > input {
+  box-sizing: border-box;
   width: 100%;
   height: 40px;
   font-size: 13px;
@@ -81,34 +84,29 @@ body main div.search form div input {
   margin-bottom: 21px;
 }
 
-body main div.search form div input::placeholder {
+body > main > div.search > form > div > input::placeholder {
   color: #000;
 }
 
-body main div.search form div.adult,
+body > main > div.search > form > div.adult,
 div.child {
   position: relative;
 }
 
-body main div.search form div.adult > input,
+body > main > div.search > form > div.adult > input,
 div.child > input {
   position: relative;
-  /* background-image: url(img/arrow-down.png);
-  background-size: 33px;
-  background-position: top right;
-  background-repeat: no-repeat; */
 }
 
-body main div.search form div.adult img,
-div.child img {
+body > main > div.search > form > div.adult > a > img,
+div.child > a > img {
   width: 33px;
   right: 13px;
   bottom: 24px;
   position: absolute;
 }
 
-/**/
-body main div.search form button {
+body > main > div.search > form button {
   cursor: pointer;
   margin-top: 10px;
   width: 100%;
@@ -119,4 +117,91 @@ body main div.search form button {
   font-weight: bold;
   border: solid 1px #d5d2d2;
   border-radius: 4px;
+}
+
+body > main > div.review {
+  padding: 40px 220px 60px;
+}
+
+body > main > div.review::after {
+  display: block;
+  clear: left;
+  content: '';
+}
+
+body > main > div.review > h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+body > main > div.review > p::before {
+  content: '';
+  display: inline-block;
+  background: url('img/ic-stars-24-px.png');
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  margin: -4px 4px -4px 0px;
+}
+
+body > main > div.review > p {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+body > main > div.review > ul > li {
+  float: left;
+  width: 320px;
+}
+
+body > main > div.review > ul > li:not(:first-child) {
+  margin-left: 20px;
+}
+
+body > main > div.review > ul > li > img {
+  margin-bottom: 22px;
+}
+
+body > main > div.review > ul > li > div.rating {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+body > main > div.review > ul > li > div.rating > span {
+  margin-right: 4px;
+  margin-bottom: 10px;
+  padding: 0 9px;
+  position: relative;
+}
+
+body > main > div.review > ul > li > div.rating > span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 18px;
+  background: url(img/star-24px.svg) no-repeat center;
+}
+
+body > main > div.review > ul > li > p {
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+  height: 70px;
+}
+
+body > main > div.review > ul > li > div.profile > * {
+  display: block;
+  font-size: 14px;
+}
+
+body > main > div.review > ul > li > div.profile > img {
+  float: left;
+  padding-right: 10px;
+}
+
+body > main > div.review > ul > li > div.profile > span {
+  font-weight: 300;
 }
