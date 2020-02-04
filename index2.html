@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./resource/css/style.css">
+</head>
+<body>
+    <section id="section-1" class="main-section">
+        <div class="inner">
+            <div class="search-box">
+                <h1>에어비앤비에서 한국의 숙소를 찾아보세요</h1>
+                <p class="text-summary">혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체 숙소까지, 에어비앤비엔 다 있습니다.</p>
+                <form>
+                    <div class="row">
+                        <label for="search-int-all" class="search-tit">목적지</label>
+                        <input type="text" id="search-int-all" placeholder="모든위치">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="search-int-checkin" class="search-tit">체크인</label>
+                            <input type="date" id="search-int-checkin">
+                        </div>
+                        <div class="col">
+                            <label for="search-int-checkout" class="search-tit">체크아웃</label>
+                            <input type="date" id="search-int-checkout">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="search-sel-adult" class="search-tit">어른</label>
+                            <select name="search-sel-adult" id="search-sel-adult">
+                                <option value="">어른 1명</option>
+                                <option value="">어른 2명</option>
+                                <option value="">어른 3명</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="search-sel-child" class="search-tit">어린이</label>
+                            <select name="search-sel-child" id="search-sel-child">
+                                <option value="">어린이 0명</option>
+                                <option value="">어린이 1명</option>
+                                <option value="">어린이 2명</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="btn-search" class="btn btn-search">검색</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="section-2" class="main-section">
+        <div class="inner">
+            <h1>한국 숙소에 다녀간 게스트의 후기</h1>
+            <p class="text-summary"><i class="ico ico-star"></i>한국의 숙소는 <strong>31,500,000개</strong> 이상의 후기에서 별 5개중 <strong>4.8개</strong>를 받았습니다.</p>
+            <section class="review-box">
+                <h2 class="invisible">메인 후기 리스트</h2>
+                <ul class="review-list">
+                    <li class="review-card">
+                        <a href="#">
+                            <img src="./resource/img/review_card_01.jpg" alt="정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..">
+                            <span class="review-rating">
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                            </span>
+                            <p class="review-text">정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..</p>
+                            <div class="review-user">
+                                <p class="review-user-img"><img src="./resource/img/user_01.png" alt="Crong 프랑스"></p>
+                                <p class="review-user-name">Crong<span>프랑스</span></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="review-card">
+                        <a href="#">
+                            <img src="./resource/img/review_card_02.jpg" alt="Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히 차분하고 따스한 도시인 Cambria에 도착해서 Ammy의 집에 도착을 했습니다. Lucy와 Ammy는 기대이상으로 별로">
+                            <span class="review-rating">
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                            </span>
+                            <p class="review-text">Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히 차분하고 따스한 도시인 Cambria에 도착해서 Ammy의 집에 도착을 했습니다. Lucy와 Ammy는 기대이상으로 별로</p>
+                            <div class="review-user">
+                                <p class="review-user-img"><img src="./resource/img/user_02.png" alt="Honux 호주"></p>
+                                <p class="review-user-name">honux<span>호주</span></p class="review-user-name">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="review-card">
+                        <a href="#">
+                            <img src="./resource/img/review_card_03.jpg" alt="산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무 좋았다. 사진과 같이 깔끔하고 지내기에 불편함이 없었다. 호스트 역시 친절하고 따뜻하게 대해주었습니다.">
+                            <span class="review-rating">
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                            </span>
+                            <p class="review-text">산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무 좋았다. 사진과 같이 깔끔하고 지내기에 불편함이 없었다. 호스트 역시 친절하고 따뜻하게 대해주었습니다.</p>
+                            <div class="review-user">
+                                <p class="review-user-img"><img src="./resource/img/user_03.png" alt="JK 한국"></p>
+                                <p class="review-user-name">JK<span>한국</span></p class="review-user-name">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </section>
+</body>
+</html>
