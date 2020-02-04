@@ -8,4 +8,11 @@
 - 화면에 보여지기 시작하는 시간은 언제인가?
 - DOMContentLoaded라는 이벤트는 언제 발생하는가? load랑은 어떤 차이점이 있는가?
 - HTML 파일 응답 받은 이후부터, 모니터화면에 보이기까지의 과정을 설명하고, 이를 암기한다.
+
 https://gist.github.com/baekCode/00c7584b528c79641b7af71504c68f41
+
+### [미션] airbnb - html 구현
+index.html 
+
+### [미션] airbnb - css 구현
+index2.html 
