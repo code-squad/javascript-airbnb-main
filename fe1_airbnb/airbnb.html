@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>airBnB에 오신것을 환영합니다.</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        .main-section {
+            position: relative;
+            width: 100%;
+            height: 620px;
+            background: url("./image/rectangle.png") no-repeat;
+            background-size: cover;
+        }
+        .hotel-search-section {
+            position: absolute;
+            left: 220px;
+            top: 60px;
+            background-color: #ffffff;
+            width: 460px;
+            height: 500px;
+        }
+        .hotel-search-title {
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            top: 24px;
+            width: 420px;
+            height: 62px;
+            font-size: 24px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+        }
+        .hotel-search-info {
+            position: absolute;
+            left: 20px;
+            right: 27px;
+            top: 100px;
+            width: 413px;
+            height: 60px;
+            font-size: 16px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.39;
+            letter-spacing: normal;
+            color: #000000;
+        }
+        .hotel-search-fieldset {
+            position: absolute;
+            left: 20px;
+            right: 27px;
+            top: 170px;
+        }
+        .hotel-search-submit {
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            bottom: 28px;
+            width: 420px;
+            height: 40px;
+            border-radius: 4px;
+            border: solid 1px #d5d2d2;
+            background-color: #ff5a60;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+        }
+        .hotel-search-input-section {
+            display: flex;
+            flex-direction: column;
+            height: 230px;
+        }
+        .destination-section {
+            display: flex;
+            flex-direction: column;
+        }
+        .destination-section input {
+            width: 420px;
+            height: 40px;
+            border-radius: 4px;
+            border: solid 1px #d5d2d2;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .destination-section label {
+            width: 73px;
+            height: 13px;
+            font-size: 13px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            margin-bottom: 9px;
+        }
+        .checkin-checkout-section {
+            display: flex;
+        }
+        .checkin-section {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .checkin-section input {
+            width: 210px;
+            height: 40px;
+            border-radius: 4px;
+            border: solid 1px #d5d2d2;
+            background-color: #ffffff;
+        }
+        .checkin-section label {
+            width: 73px;
+            height: 13px;
+            font-size: 13px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            margin-bottom: 9px;
+        }
+        .checkout-section {
+            display: flex;
+            flex-direction: column;
+        }
+        .checkout-section input {
+            width: 210px;
+            height: 40px;
+            border-radius: 4px;
+            border: solid 1px #d5d2d2;
+            background-color: #ffffff;
+        }
+        .checkout-section label {
+            width: 73px;
+            height: 13px;
+            font-size: 13px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            margin-bottom: 9px;
+        }
+        .check-age-section {
+            display: flex;
+        }
+        .adult-age-section {
+            display: flex;
+            flex-direction: column;
+        }
+        .adult-age-section select {
+            width: 210px;
+            height: 40px;
+            border-radius: 4px;
+            border: solid 1px #d5d2d2;
+            background-color: #ffffff;
+            font-weight: bold;
+        }
+        .adult-age-section label {
+            width: 73px;
+            height: 13px;
+            font-size: 13px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            margin-bottom: 9px;
+        }
+        .child-age-section {
+            display: flex;
+            flex-direction: column;
+        }
+        .child-age-section select {
+            width: 210px;
+            height: 40px;
+            border-radius: 4px;
+            border: solid 1px #d5d2d2;
+            background-color: #ffffff;
+            font-weight: bold;
+        }
+        .child-age-section label {
+            width: 73px;
+            height: 13px;
+            font-size: 13px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            margin-bottom: 9px;
+        }
+        ::placeholder {
+            width: 380px;
+            height: 31px;
+            font-size: 13px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+<div class="airbnb-wrap">
+    <section class="main-section">
+        <div class="hotel-search-section">
+            <form action="#" method="POST" class="hotel-search-form">
+                <h3 class="hotel-search-title">에어비앤비에서 한국의 숙소를 찾아보세요</h3>
+                <p class="hotel-search-info">혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체 숙소까지, 에어비앤비엔 다 있습니다.</p>
+                <fieldset class="hotel-search-fieldset">
+                    <legend>숙소예약</legend>
+                    <div class="hotel-search-input-section">
+                        <div class="destination-section">
+                            <label for="destination">목적지</label>
+                            <input type="text" id="destination" value="" placeholder="　모든 위치">
+                        </div>
+                        <div class="checkin-checkout-section">
+                            <div class="checkin-section">
+                                <label for="checkin">체크인</label>
+                                <input type="text" id="checkin" value="" placeholder="　년/월/일">
+                            </div>
+                            <div class="checkout-section">
+                                <label for="checkout">체크아웃</label>
+                                <input type="text" id="checkout" value="" placeholder="　년/월/일">
+                            </div>
+                        </div>
+                        <div class="check-age-section">
+                            <div class="adult-age-section">
+                                <label for="adult">어른</label>
+                                <select id="adult">
+                                    <option>어른 1명</option>
+                                    <option>어른 2명</option>
+                                    <option>어른 3명</option>
+                                </select>
+                            </div>
+                            <div class="child-age-section">
+                                <label for="child">어린이</label>
+                                <select id="child">
+                                    <option>어린이 0명</option>
+                                    <option>어린이 1명</option>
+                                    <option>어린이 2명</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <input type="submit" value="검색" class="hotel-search-submit">
+            </form>
+        </div>
+    </section>
+    <section class="review-section">
+        <div>
+            <h4>한국 숙소에 직접 다녀간 게스트의 후기</h4>
+            <span>☆</span>한국의 숙소는 <strong>31,500,000개</strong> 이상의 후기에서 별 5개중 <strong>4.8개</strong>를 받았습니다.
+        </div>
+    </section>
+</div>
+</body>
+</html>
