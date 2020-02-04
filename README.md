@@ -139,3 +139,4 @@ HTML 이 모두 로드되고, DOM 트리가 완성되었지만, `외부 리소�
 - [W3C - Referrer Policy](https://www.w3.org/TR/referrer-policy/)
 - [Lighthouse - FCP](https://web.dev/first-contentful-paint/?utm_source=lighthouse&utm_medium=lr)
 - [Google Developers](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction?hl=ko)
+- 되라
