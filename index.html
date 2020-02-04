@@ -4,115 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>STEP 10-2 Airbnb Main Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
-    <div>
-        <div><img src="#" alt="#"></div>
-        <div>
-            <h3 class="main-msg">에어비앤비에서 한국의 숙소를 찾아보세요</h3>
+    <div class='header__background'>
+        <div class="inner">
+        <div class='menu__searchform'>
+            <h3 class="menu__searchform--msg">에어비앤비에서 한국의 숙소를 찾아보세요</h3>
             <p>혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체 숙소까지, 에어비앤비엔 다 있습니다.</p>
-            <div class="book-container">
-                <div class="destination">
-                    <span>목적지</span>
-                </div>
-                <div class="destination-input">
-                    <input type="text">
-                </div>
-            </div>
-            <div class="book-container">
-                <div class="checkin">
-                    <label for="checkin-input">
-                        <span>체크인</span>
+
+            <form>
+                <div class="menu__searchform--input">
+                    <label for="destination-input">
+                        <span>목적지</span>
                     </label>
-                    <div>
-                        <input type="text" id="checkin-input">
+                    <div class='input--destination'>
+                        <input type="text" id='destination-input' placeholder='모든 위치'>
                     </div>
                 </div>
-                <div class="checkout">
-                    <label for="checkout-input">
-                        <span>체크아웃</span>
-                    </label>
-                    <div>
-                        <input type="text" id="checkout-input">
+                <div class="menu__searchform--input">
+                    <div class="inputbox-small">
+                        <label for="checkin-input">
+                            <span>체크인</span>
+                        </label>
+                        <div>
+                            <input type="date" id="checkin-input" placeholder='년/월/일'>
+                        </div>
+                    </div>
+                    <div class="inputbox-small">
+                        <label for="checkout-input">
+                            <span>체크아웃</span>
+                        </label>
+                        <div>
+                            <input type="date" id="checkout-input" placeholder='년/월/일'>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="book-container">
-                <div class="adult-pax select-container">
-                    <label for="adult-select">
-                        <span>어른</span>
-                    </label>
-                    <div class="adult-pax-select">
-                        <select name="adult" id="adult-select"></select>
+                <div class="menu__searchform--input">
+                    <div class="inputbox-small">
+                        <label for="adult-select">
+                            <span>어른</span>
+                        </label>
+                        <div>
+                            <select name="adult" id="adult-select">
+                                <option value="">어른 0명</option>
+                                <option value="">어른 1명</option>
+                                <option value="">어른 2명</option>
+                                <option value="">어른 3명</option>
+                                <option value="">어른 4명</option>
+                                <option value="">어른 5명</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inputbox-small">
+                        <label for="child-select">
+                            <span>어린이</span>
+                        </label>
+                        <div>
+                            <select name="child" id="child-select">
+                                <option value="">어린이 0명</option>
+                                <option value="">어린이 1명</option>
+                                <option value="">어린이 2명</option>
+                                <option value="">어린이 3명</option>
+                                <option value="">어린이 4명</option>
+                                <option value="">어린이 5명</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div class="child-pax select-container">
-                    <label for="child-select">
-                        <span>어린이</span>
-                    </label>
-                    <div class="child-pax-select">
-                        <select name="child" id="child-select"></select>
-                    </div>
+                <div class="menu__searchform--searchbutton">
+                    <input type="submit" value='검색'>
                 </div>
+            </form>
             </div>
-            <div class="search-button">
-                <button>검색</button>
-            </div>
-            </div>
+        </div>
     </div>
-    <h4>한국 숙소에 직접 다녀간 게스트의 후기</h4>
-    <div>
-        <img src="#" alt="#">
-        <span>한국의 숙소는 <strong>31,500,000개</strong> 이상의 후기에서 별 5개 중 <strong>4.8개</strong>를 받았습니다.</span>
-    </div>
-    <div>
-        <article class="review-container">
-            <img src="#" alt="#">
-            <div class="review-rate"></div>
-            <p>정말 최고의 숙소였습니다. 
-            따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 
-            2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 
-            따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..</p>
-            <div class="user-profile">
-                <img src="#" alt="#">
-                <section class="user-info">
-                    <div class="user-name">Crong</div>
-                    <div class="country">프랑스</div>
-                </section>
-            </div>
-        </article>
-        <article class="review-container">
-            <img src="#" alt="#">
-            <div class="review-rate"></div>
-            <p>정말 최고의 숙소였습니다. 
-            따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 
-            2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 
-            따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..</p>
-            <div class="user-profile">
-                <img src="#" alt="#">
-                <section class="user-info">
-                    <div class="user-name">Honux</div>
-                    <div class="country">호주</div>
-                </section>
-            </div>
-        </article>
-        <article class="review-container">
-            <img src="#" alt="#">
-            <div class="review-rate"></div>
-            <p>정말 최고의 숙소였습니다. 
-            따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 
-            2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 
-            따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..</p>
-            <div class="user-profile">
-                <img src="#" alt="#">
-                <section class="user-info">
-                    <div class="user-name">JK</div>
-                    <div class="country">가나</div>
-                </section>
-            </div>
-        </article>
-        
+
+    <div class="review__section">
+        <div class="review__section--title">
+            <h4>한국 숙소에 직접 다녀간 게스트의 후기</h4>
+        </div>
+        <div class="review__section--summary">
+            <img src="images/ic-stars-24-px.png" alt="#">
+            <span>한국의 숙소는 <strong>31,500,000개</strong> 이상의 후기에서 별 5개 중 <strong>4.8개</strong>를 받았습니다.</span>
+        </div>
+        <div class="review__section--content">
+            <article>
+                <img src="images/place1.png" alt="#">
+                <div class="content--rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>정말 최고의 숙소였습니다. 
+                따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 
+                2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 
+                따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..</p>
+                <div class="content--profile">
+                    <img src="images/user1.png" alt="#">
+                    <section class="user-info">
+                        <div class="user-name">Crong</div>
+                        <div class="country">프랑스</div>
+                    </section>
+                </div>
+            </article>
+            <article>
+                <img src="images/place2.png" alt="#">
+                <div class="content--rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>정말 최고의 숙소였습니다. 
+                따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 
+                2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 
+                따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..</p>
+                <div class="content--profile">
+                    <img src="images/user2.png" alt="#">
+                    <section class="user-info">
+                        <div class="user-name">Honux</div>
+                        <div class="country">호주</div>
+                    </section>
+                </div>
+            </article>
+            <article>
+                <img src="images/place3.png" alt="#">
+                <div class="content--rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>정말 최고의 숙소였습니다. 
+                따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 
+                2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 
+                따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..</p>
+                <div class="content--profile">
+                    <img src="images/user3.png" alt="#">
+                    <section class="user-info">
+                        <div class="user-name">JK</div>
+                        <div class="country">가나</div>
+                    </section>
+                </div>
+            </article>
+        </div>
     </div>
 </body>
 </html>

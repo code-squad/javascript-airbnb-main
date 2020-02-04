@@ -1,0 +1,236 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+}
+
+/* Header Background */
+
+.header__background{
+  background: url(./images/back.png) no-repeat;
+  background-size : 100%;
+  display: block;
+  width: 100%;
+  height: 620px;
+}
+
+/* Menu Section */
+
+.inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.menu__searchform {
+  position: absolute;
+  width: 460px;
+  height: 500px;
+  margin-top: 60px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 24px 20px 28px 20px;
+  font-weight: bold;
+}
+
+.menu__searchform--msg {
+  font-size: 28px;
+  width: 420px;
+  height: 62px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+
+input[placeholder],
+select {
+  font-weight: bold;
+}
+
+.menu__searchform > p {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0px;
+}
+
+.menu__searchform > form {
+  width: 420px;
+  height: 331px;
+  margin-top: 20px;
+}
+
+.menu__searchform--input,
+.menu__searchform--searchbutton {
+  width: 420px;
+  float: left;
+}
+
+.menu__searchform--input::after,
+.menu__searchform--searchbutton::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu__searchform--input {
+  margin-bottom: 21px;
+  height: 60px;
+}
+
+.menu__searchform--searchbutton {
+  height: 40px;
+  margin-top: 9px;
+  background-color: #ff5a60;
+  border: 1px solid #d5d2d2;
+}
+
+.menu__searchform--input label {
+  display: inline-block;
+  height: 13px;
+  width: 73px;
+  margin-bottom: 7px;
+}
+
+.menu__searchform--input .input--destination {
+  width: 100%;
+  border: 1px solid grey;
+  box-sizing: border-box;
+}
+
+.menu__searchform--input input::placeholder,
+.option {
+  color: #000000;
+}
+
+.menu__searchform--input .input--destination input {
+  width: 380px;
+  height: 31px;
+  box-sizing: border-box;
+  border: none;
+  margin: 4px 20px;
+}
+
+.menu__searchform--input .inputbox-small {
+  width: 50%;
+  height: 37px;
+  margin: 0;
+  float: left;
+}
+
+.inputbox-small div {
+  width: 210px;
+  height: 37px;
+  border: 1px solid #d5d2d2;
+  box-sizing: border-box;
+}
+
+.inputbox-small input,
+.inputbox-small select {
+  width: 170px;
+  height: 31px;
+  box-sizing: border-box;
+  border: none;
+  margin: 3px 20px;
+}
+
+.inputbox-small select {
+  background-color: #ffffff;
+}
+
+.menu__searchform--searchbutton input {
+  width: 162px;
+  height: 34px;
+  font-size: 15px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  margin: 3px 129px;
+}
+
+/* Review Section */
+
+.review__section {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.review__section--title {
+  display: table;
+  width: 460px;
+  height: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  margin: 0px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.review__section--summary {
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.review__section--summary img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+
+.review__section--summary span {
+  font-size: 18px;
+  line-height: 40px;
+  display: inline-block;
+}
+
+.review__section--content img {
+  width: 320px;
+  height: 220px;
+}
+
+.content--rate i {
+  color: #018488;
+  text-shadow: 0 0 1px #979797;
+}
+
+.content--rate {
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+
+.review__section--content p {
+  width: 320px;
+  height: 70px;
+  margin: 0px;
+  line-height: normal;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.content--profile img {
+  width: 42px;
+  height: 42px;
+}
+
+.user-info {
+  margin-left: 10px;
+  width: 110px;
+  height: 33px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.review__section--content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
