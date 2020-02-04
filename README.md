@@ -13,6 +13,8 @@ https://gist.github.com/baekCode/00c7584b528c79641b7af71504c68f41
 
 ### [미션] airbnb - html 구현
 index.html 
+https://baekcode.github.io/codesquad-FE/day1/index.html
 
 ### [미션] airbnb - css 구현
 index2.html 
+https://baekcode.github.io/codesquad-FE/day1/index2.html
