@@ -200,6 +200,7 @@ select {
 }
 
 .text-summary {
+  display: block;
   font-size: 18px;
   line-height: 1.38em;
 }
@@ -215,6 +216,17 @@ select {
 .btn.btn-search {
   color: #fff;
   background: #ff5a60;
+}
+
+.ico {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.ico.ico-star {
+  background: url(../img/ico_star.png) 50% 50% no-repeat;
 }
 
 /* Main section1 */
@@ -253,9 +265,17 @@ select {
   font-size: 20px;
 }
 
-#section-2 h1,
-#section-2 .text-summary {
+#section-2 h1 {
   line-height: 40px;
+}
+
+#section-2 .text-summary {
+  padding: 8px 0;
+  line-height: 24px;
+}
+
+.review-box {
+  margin-top: 20px;
 }
 
 .review-box .review-list {
