@@ -10,37 +10,39 @@
   <body>
     <main>
       <h1>에어비앤비</h1>
-      <section class="search">
+      <div class="search">
         <form method="post">
           <h2>에어비앤비에서 한국의 숙소를 찾아보세요</h2>
           <p>
             혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집
             전체 숙소까지, 에어비앤비엔 다 있습니다.
           </p>
-          <div>
+          <div class="destination">
             <label for="destination">목적지</label
             ><input id="destination" type="text" placeholder="모든 위치" />
           </div>
-          <div>
+          <div class="checkin">
             <label for="checkin">체크인</label
             ><input id="checkin" type="text" placeholder="년/원/일" />
           </div>
-          <div>
+          <div class="checkout">
             <label for="checkout">체크아웃</label
             ><input id="checkout" type="text" placeholder="년/원/일" />
           </div>
-          <div>
+          <div class="adult">
             <label for="adult">어른</label
             ><input id="adult" type="text" placeholder="어른 0명" />
+            <a href="#"><img src="img/arrow-down.png" alt="arrow button"/></a>
           </div>
-          <div>
+          <div class="child">
             <label for="child">어린이</label
             ><input id="child" type="text" placeholder="어린이 0명" />
+            <a href="#"><img src="img/arrow-down.png" alt="arrow button"/></a>
           </div>
           <button type="submit">검색</button>
         </form>
-      </section>
-      <section class="review">
+      </div>
+      <div class="review">
         <h3>한국 숙소에 직접 다녀간 게스트의 후기</h3>
         <p>
           한국의 숙소는 <span>31,500,000개</span> 이상의 후기에서 별 5개중
@@ -106,7 +108,7 @@
             </div>
           </li>
         </ul>
-      </section>
+      </div>
     </main>
   </body>
 </html>

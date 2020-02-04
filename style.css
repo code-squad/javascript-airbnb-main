@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1440px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+li {
+  list-style: none;
+}
+
+body main {
+  border: 1px solid blue;
+}
+
+body main h1 {
+  font-size: 0;
+}
+
+body main div.search {
+  height: 620px;
+  background-image: url('img/bg.png');
+  border: 1px solid green;
+}
+
+body main div.search form {
+  background-color: #fff;
+  margin-top: 60px;
+  margin-left: 220px;
+  padding: 24px 20px 28px 20px;
+  width: 420px; /* 460 - 40 */
+  height: 448px; /* 500 - 52 */
+}
+
+body main div.search form h2 {
+  margin-bottom: 14px;
+  font-size: 28px;
+}
+
+body main div.search form p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.39;
+}
+
+body main div.search form div {
+  float: left;
+  width: 50%;
+}
+
+body main div.search form div.destination {
+  width: 100%;
+}
+/**/
+body main div.search form div * {
+  display: block;
+}
+
+body main div.search form div label {
+  font-size: 13px;
+  font-weight: bold;
+  /* test */
+  margin-bottom: 7px;
+}
+
+/* test */
+body main div.search form div input {
+  width: 100%;
+  height: 40px;
+  font-size: 13px;
+  font-weight: bold;
+  border: solid 1px #d5d2d2;
+  border-radius: 4px;
+  text-indent: 19px;
+  margin-bottom: 21px;
+}
+
+body main div.search form div input::placeholder {
+  color: #000;
+}
+
+body main div.search form div.adult,
+div.child {
+  position: relative;
+}
+
+body main div.search form div.adult > input,
+div.child > input {
+  position: relative;
+  /* background-image: url(img/arrow-down.png);
+  background-size: 33px;
+  background-position: top right;
+  background-repeat: no-repeat; */
+}
+
+body main div.search form div.adult img,
+div.child img {
+  width: 33px;
+  right: 13px;
+  bottom: 24px;
+  position: absolute;
+}
+
+/**/
+body main div.search form button {
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  background-color: #ff5a60;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 1px #d5d2d2;
+  border-radius: 4px;
+}
