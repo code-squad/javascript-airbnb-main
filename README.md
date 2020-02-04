@@ -18,3 +18,53 @@ https://baekcode.github.io/codesquad-FE/day1/index.html
 ### [미션] airbnb - css 구현
 index2.html 
 https://baekcode.github.io/codesquad-FE/day1/index2.html
+
+#### DOCTYPE 정의 및 선언(DTD)
+HTML 문서에서 제일먼저 선언되어야 하며, **선언된 페이지의 HTML 버전이 무엇인지 웹브라우저에게 알려주는 역활**을 한다.
+문서의 유형, 선언에 따라 문서내 요소와 속성을 처리하는 기준
+
+- HTML5 : HTML5의 형태의 DOCTYPE선언 방식 <!DOCTYPE html>
+- XHTML : XHTML 1.0 Strict / 1.0 Transitional / 1.0 Frameset
+- HTML : 4.01 Strict / 4.01 Transitional / 4.01 Frameset
+
+Strict : 엄격 모드, 웹표준을 엄격하게 지키는 버전
+Transitional : 웹페이지와 호환성을 위해 쓰임
+HTML5는 SGML을 기반으로 하기때문에 DTD를 참조할 필요가 없다.
+
+```
+HTML 5 
+<!DOCTYPE html>
+
+
+HTML 4.01 Strict (엄격모드)
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+
+HTML 4.01 Transitional (호환모드)
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+HTML 4.01 Frameset 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+
+
+XHTML 1.0 Strict (엄격모드)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+XHTML 1.0 Transitional (호환모드)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+국내에서 가장 많이 사용하는 DOCTYPE. 하위 브라우저 호환성 때문.
+
+
+XHTML 1.0 Frameset
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+
+XHTML 1.1
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+```
+
