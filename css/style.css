@@ -1,9 +1,9 @@
 @charset "utf-8";
+
 /* reset */
 * {
   box-sizing: border-box;
   font-family: Apple SD Gothic Neo, Malgun Gothic, sans-serif;
-	
 }
 
 html, body, div, span, applet, object, iframe,
@@ -54,8 +54,6 @@ table {
 	border-spacing: 0;
 }
 
-
-
 /* style */
 .wrap {
   /* background-color: #; */
@@ -68,6 +66,7 @@ section {
   padding: 0 220px;
 }
 
+/* section - 1 */
 .reservation_wrap {
   position: relative;
   
@@ -165,7 +164,7 @@ section {
   cursor: pointer;
 }
 
-/* section */
+/* section - 2 */
 .review_wrap {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -183,12 +182,12 @@ section {
 
 .review_desc p {
   position: relative;
-  margin-left: 24px;
+  padding-left: 24px;
 }
 
 .review_desc p::before {
   position: absolute;
-  left: -24px;
+  left: 0;
   top: 50%;
   margin-top: -12px;
   content: "";
@@ -197,18 +196,81 @@ section {
   background-image: url(../images/stars.jpg);
 }
 
+.review_desc p strong {
+  font-weight: 700;
+}
+
 .review_container {
   margin-right: -10px;
   margin-left: -10px;
 }
 
 .review_container ul {
-  padding:10px;
   display: flex;
+  padding:10px;
 }
+
 .review_container ul li {
   justify-content: space-between;
 }
 
+.rooms_img {
+  margin-bottom: 20px;
+}
+
+.rooms_img a {
+  display: inline-block;
+}
+
+.rooms_img a img {
+  width: 100%;
+  height: auto;
+}
+
+.review_score {
+  margin-bottom: 16px;
+}
+
+.review_score i {
+  color: #018488;
+}
+
+.review_contents {
+  margin-bottom: 16px;
+  padding-right: 12px;
+  letter-spacing: 0.3px; /* 0.2로 주면 됨. 말줄임 테스트 용 */
+}
+
+.review_contents p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-align : justify; /* 텍스트 정리 */
+}
+
+.reviewer {
+  display: table;
+  clear: both;
+}
+
+.reviewer .reviewer_img {
+  float: left;
+  overflow: hidden;
+}
+.reviewer .reviewer_img img {
+ 
+  height: 100%;
+}
+
+.reviewer_info {
+  overflow: hidden;
+  display: table-cell;
+  vertical-align: middle;
+}
 
 
