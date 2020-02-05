@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1">
+    <meta name="description" content="Airbnb Clone">
+    <title>Airbnb Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="artboard">
+            <div id="artboard_container">
+                <div id="search">
+                    <h1 id="search_title">에어비앤비에서 한국의 숙소를 찾아보세요.</h1>
+                    <p id="search_introduce">혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 저네 숙소까지, 에어비앤비엔 다 있습니다.</p>
+                    <form>
+                        <div class="row">
+                            <div class="search_destination">
+                                <p class="search_option_text">목적지</p>
+                                <input class="search_option_destination" type="text" placeholder="모든 위치" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="search_option">
+                                <p class="search_option_text">체크인</p>
+                                <input class="search_option_input" type="text" placeholder="년/월/일" />
+                            </div>
+                            <div class="search_option">
+                                <p class="search_option_text">체크아웃</p>
+                                <input class="search_option_input" type="text" placeholder="년/월/일" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="search_option">
+                                <p class="search_option_text">어른</p>
+                                <select class="search_option_input">
+                                    <option value="" disabled selected>어른 0명</option>
+                                    <option value="">어른 1명</option>
+                                </select>
+                            </div>
+                            <div class="search_option">
+                                <p class="search_option_text">어린이</p>
+                                <select class="search_option_input">
+                                    <option value="" disabled selected>어린이 0명</option>
+                                    <option value="">어린이 1명</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button id="search_button">검색</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="content_upper">
+                    <div class="content_upper_main_title">
+                        <b>한국 숙소에 직접 다녀간 게스트의 후기.</b>
+                    </div>
+                    <div class="content_upper_sub_title">
+                        <img class="star_img" src="./assets/image/ic-stars-24-px.jpg">한국의 숙소는 <b>31,500,000개</b> 이상의 후기에서 별 5개중 <b>4.8개</b>를 받았습니다.
+                    </div>
+                </div>
+                <div class="content_lower">
+                    <ul>
+                        <li>
+                            <div class="accomodation_image"><img src="./assets/image/accomodation_1.jpg"></div>
+                            <div class="rating">★★★★</div>
+                            <div class="review">정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..</div>
+                            <div class="user_information">
+                                <div class="avatar"><img src="./assets/image/avatar_1.jpg"></div>
+                                <div class="profile">
+                                    <div class="name">Crong</div>
+                                    <div class="nationality">프랑스</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accomodation_image"><img src="./assets/image/accomodation_2.jpg"></div>
+                            <div class="rating">★★★★★</div>
+                            <div class="review">Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감사하고 굉장히 차분하고 따스한 도시인 Cambria에 도착해서 Ammy의 집에 도착을 했습니다. Lucy와 Ammy는 기대이상으로 별로</div>
+                            <div class="user_information">
+                                <div class="avatar"><img src="./assets/image/avatar_2.jpg"></div>
+                                <div class="profile">
+                                    <div class="name">Honux</div>
+                                    <div class="nationality">호주</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accomodation_image"><img src="./assets/image/accomodation_3.jpg"></div>
+                            <div class="rating">★★★★</div>
+                            <div class="review">산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무 좋았다. 사진과 같이 깔끔하고 지내기에 불편함이 없었다. 호스트 역시 친절하고 따뜻하게 대해주었습니다.</div>
+                            <div class="user_information">
+                                <div class="avatar"><img src="./assets/image/avatar_3.jpg"></div>
+                                <div class="profile">
+                                    <div class="name">JK</div>
+                                    <div class="nationality">한국</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
