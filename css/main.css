@@ -1,0 +1,82 @@
+/* typogrphy */
+/* color */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 1440px;
+  margin: 0 auto; }
+
+li {
+  list-style: none; }
+
+img {
+  border: none; }
+
+i,
+b {
+  font-weight: bold;
+  font-style: normal; }
+
+h1 {
+  font-size: 0; }
+
+div.search {
+  background-image: url("../img/bg.png");
+  height: 620px;
+  overflow: hidden; }
+  div.search form {
+    background-color: #fff;
+    margin-top: 60px;
+    margin-left: 220px;
+    padding: 24px 20px 28px 20px;
+    width: 420px;
+    height: 448px; }
+    div.search form h2 {
+      margin-bottom: 14px;
+      font-size: 1.75rem; }
+    div.search form p {
+      margin-bottom: 20px;
+      font-size: 1.125rem;
+      font-weight: 300;
+      line-height: 1.39; }
+    div.search form div.input-container div {
+      float: left;
+      width: 50%;
+      font-size: 0.72222rem;
+      font-weight: bold; }
+      div.search form div.input-container div.destination {
+        width: 100%; }
+      div.search form div.input-container div label {
+        display: block;
+        margin-bottom: 7px; }
+      div.search form div.input-container div input {
+        box-sizing: border-box;
+        width: 100%;
+        height: 40px;
+        border: solid 1px #d5d2d2;
+        border-radius: 4px;
+        text-indent: 19px;
+        margin-bottom: 21px; }
+        div.search form div.input-container div input::placeholder {
+          color: #000;
+          font-weight: bold; }
+      div.search form div.input-container div.adult, div.search form div.input-container div.child {
+        position: relative; }
+        div.search form div.input-container div.adult img, div.search form div.input-container div.child img {
+          position: absolute;
+          width: 33px;
+          right: 13px;
+          bottom: 24px; }
+    div.search form div.input-container button {
+      cursor: pointer;
+      margin-top: 10px;
+      width: 100%;
+      height: 40px;
+      background-color: #ff5a60;
+      color: #fff;
+      font-size: 1.06667rem;
+      font-weight: bold;
+      border: solid 1px #d5d2d2;
+      border-radius: 4px; }
