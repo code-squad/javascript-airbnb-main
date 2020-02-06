@@ -1,0 +1,260 @@
+diff a/airbnb.html b/airbnb.html	(rejected hunks)
+@@ -4,160 +4,138 @@
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+-    <link rel="stylesheet" href="./CSS/style.css" />
++    <link
++      href="https://fonts.googleapis.com/css?family=Amatic+SC"
++      rel="stylesheet"
++      type="text/css"
++    />
++    <link rel="stylesheet" href="./CSS/style2.css" />
+     <title>Document</title>
+   </head>
+   <body>
+-    <section id="total_view">
+-      <section id="total_view_top_area" class="top_area">
+-        <div id="top_area_backgorund" class="top_area_backgorund">
+-          <div class="top_area_backgorund_img">
+-            <img
+-              src="./image/KakaoTalk_20200204_012542469.jpg"
+-              alt="에어비앤비에서 숙소,호텔 등을 예약하세요"
+-            />
++    <div class="nav_bar">
++      <div class="nav_bar_text">내비</div>
++    </div>
++    <section>
++      <section class="top">
++        <div class="top_background"></div>
++        <div class="top_reservation">
++          <h1 class="top_reservation_title">
++            에어비앤비에서 한국의 숙소를 찾아보세요.
++          </h1>
++          <div class="top_reservation_sub">
++            혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집
++            전체 숙소까지, 에어비앤비엔 다 있습니다.
+           </div>
+-          <div
+-            id="total_view_top_area_reservation_info"
+-            class="reservation_info"
+-          >
+-            <div class="reservation_info_title">
+-              <h1>에어비앤비에서 한국의 숙소를 찾아보세요</h1>
++          <div class="top_reservation_destination">
++            <p><strong>목적지</strong></p>
++            <div>
++              <input type="text" placeholder="모든 위치" />
+             </div>
+-            <div class="reservation_info_subtitle">
+-              혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집
+-              전체 숙소까지, 에어비앤비엔 다 있습니다.
+-            </div>
+-            <div class="reservation_info_location">
+-              목적지
+-              <div class="reservation_info_location_search">
+-                <input
+-                  type="text"
+-                  value="모든 위치"
+-                  class="reservation_info_location_search_input"
+-                />
++          </div>
++          <div class="top_reservation_check">
++            <div class="check_in">
++              <p><strong>체크인</strong></p>
++              <div>
++                <input type="text" placeholder="년/월/일" />
+               </div>
+             </div>
+-            <div class="reservation_info_checklist">
+-              <div class="reservation_info_checklist_checkin">
+-                체크인
+-                <div class="reservation_info_checklist_checkin_search">
+-                  <input
+-                    type="text"
+-                    value="년/월/일"
+-                    class="reservation_info_checklist_checkin_search_input"
+-                  />
+-                </div>
+-              </div>
+-              <div class="reservation_info_checklist_checkout">
+-                체크아웃
+-                <div class="reservation_info_checklist_checkout_search">
+-                  <input
+-                    type="text"
+-                    value="년/월/일"
+-                    class="reservation_info_checklist_checkout_search_input"
+-                  />
+-                </div>
++            <div class="check_out">
++              <p>체크아웃</p>
++              <div>
++                <input type="text" placeholder="년/월/일" />
+               </div>
+             </div>
+-            <div class="reservation_info_person">
+-              <div class="reservation_info_person_adult">
+-                어른
+-                <div class="reservation_info_adult_selete">
+-                  <select name="adults" id="adults">
+-                    <option value="1">성인 1명</option>
+-                    <option value="2">성인 2명</option>
+-                    <option value="3">성인 3명</option>
+-                  </select>
+-                </div>
++          </div>
++          <div class="top_reservation_person">
++            <div>
++              <p><strong>성인</strong></p>
++              <div>
++                <select name="성인">
++                  <option value="1">1명</option>
++                  <option value="2">2명</option>
++                  <option value="3">3명</option>
++                </select>
+               </div>
+-              <div class="reservation_info_person_child">
+-                아이
+-                <div class="reservation_info_child_selete">
+-                  <select name="childs" id="childs">
+-                    <option value="1">아이 1명</option>
+-                    <option value="2">아이 2명</option>
+-                    <option value="3">아이 3명</option>
+-                  </select>
+-                </div>
++            </div>
++            <div>
++              <p><strong>아이</strong></p>
++              <div>
++                <select name="아이">
++                  <option value="1">1명</option>
++                  <option value="2">2명</option>
++                  <option value="3">3명</option>
++                </select>
+               </div>
+             </div>
+-            <button type="submit" class="reservation_info_search">검색</button>
+           </div>
++          <button>검색</button>
+         </div>
+       </section>
+ 
+-      <section id="total_view_bottom_area" class="bottom_area">
+-        <div class="bottom_area_title">
+-          한국 숙소에 직접 다녀간 게스트 후기
+-        </div>
+-        <div class="bottom_area_title_sub">
++      <section class="bottom">
++        <h2 class="bottom_title">한국 숙소에 직접 다녀간 게스트의 후기</h2>
++        <p>
++          <img src="./image/ic-stars-24-px.png" alt="star" />
+           한국 숙소는 <strong>31,500,000개</strong> 이상의 후기에서 별 5개중
+           <strong>4.8개</strong>를 받았습니다.
+-        </div>
+-        <section class="bottom_area_review">
+-          <div class="bottom_area_review_first">
+-            <div class="bottom_area_review_first_img">
+-              <img src="./image/first.jpg" alt="first 리뷰 이미지" />
++        </p>
++        <div class="bottom_review">
++          <div class="first">
++            <div class="first_img">
++              <img src="./image/first.jpg" alt="첫번째 리뷰 이미지" />
++              <div class="first_star">★★★★★</div>
++            </div>
++            <div class="first_info">
++              산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무
++              좋았다. 사진과 같이 깔끔하고 지내기에 불편함이 없었다. 호스트 역시
++              친절하고 따뜻하게 대해주었습니다.
++            </div>
++            <div class="first_reviewer">
++              <img src="./image/hoi.png" alt="첫번째 리뷰어 이미지" />
++              <div class="first_reviewer_info">
++                <div>Crong</div>
++                <div>프랑스</div>
++              </div>
++            </div>
++          </div>
++          <div class="secound">
++            <div class="secound_img">
++              <img src="./image/secound.jpg" alt="두번째 리뷰 이미지" />
++              <div class="secound_star">★★★★</div>
+             </div>
+-            <div class="bottom_area_review_first_star">★★★★</div>
+-            <div class="bottom_area_review_first_content">
++            <div class="secound_info">
+               정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는 상쾌함이
+               좋았습니다. 2인이서 숙박하는데에 최고의 장점을 보여 주었습니다.
+               따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..
+             </div>
+-            <div class="bottom_area_review_first_reviewer">
+-              <div class="bottom_area_review_first_reviewer_img">
+-                <img src="./image/hoi.png" alt="first 리뷰어 이미지" />
+-              </div>
+-              <div class="bottom_area_review_first_reviewer_info">
+-                <span>hoi</span>
+-                <span>한국</span>
++            <div class="secound_reviewer">
++              <img src="./image/beakCo.jpg" alt="두번째 리뷰어 이미지" />
++              <div class="secound_reviewer_info">
++                <div>honux</div>
++                <div>호주</div>
+               </div>
+             </div>
+           </div>
+-
+-          <div class="bottom_area_review_secound">
+-            <div class="bottom_area_review_secound_img">
+-              <img src="./image/secound.jpg" alt="secound 리뷰 이미지" />
++          <div class="third">
++            <div class="third_img">
++              <img src="./image/third.jpg" alt="세번째 리뷰 이미지" />
++              <div class="third_star">★★★</div>
+             </div>
+-            <div class="bottom_area_review_secound_star">★★★★</div>
+-            <div class="bottom_area_review_secound_content">
++            <div class="third_info">
+               Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히 차분하고
+               따스한 도시인 Cambria에 도착해서 Ammy의 집에 도착을 했습니다.
+               Lucy와 Ammy는 기대이상으로 별로
+             </div>
+-            <div class="bottom_area_review_secound_reviewer">
+-              <div class="bottom_area_review_secound_reviewer_img">
+-                <img src="./image/beakCo.jpg" alt="secound 리뷰어 이미지" />
+-              </div>
+-              <div class="bottom_area_review_secound_reviewer_info">
+-                <span>baekCo</span>
+-                <span>미국</span>
+-              </div>
+-            </div>
+-          </div>
+-          <div class="bottom_area_review_third">
+-            <div class="bottom_area_review_third_img">
+-              <img src="./image/third.jpg" alt="third 리뷰 이미지" />
+-            </div>
+-            <div class="bottom_area_review_third_star">★★★★</div>
+-            <div class="bottom_area_review_third_content">
+-              산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무
+-              좋았다. 사진과 같이 깔끔하고 지내기에 불편함이 없었다. 호스트 역시
+-              친절하고 따뜻하게 대해주었습니다.
+-            </div>
+-            <div class="bottom_area_review_third_reviewer">
+-              <div class="bottom_area_review_third_reviewer_img">
+-                <img src="./image/lia.jpg" alt="third 리뷰어 이미지" />
+-              </div>
+-              <div class="bottom_area_review_third_reviewer_info">
+-                <span>Lia</span>
+-                <span>캐나다</span>
++            <div class="third_reviewer">
++              <img src="./image/lia.jpg" alt="세번째 리뷰어 이미지" />
++              <div class="third_reviewer_info">
++                <div>JK</div>
++                <div>한국</div>
+               </div>
+             </div>
+           </div>
+-        </section>
++        </div>
+       </section>
+     </section>
+   </body>
