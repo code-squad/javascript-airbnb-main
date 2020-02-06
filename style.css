@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #000;
+}
+
+main {
+  width: 100%;
+}
+
+section {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.reservation {
+  padding: 60px 220px;
+  height: 620px;
+  background: url("https://i.postimg.cc/5tVszYP3/rectangle.jpg") no-repeat;
+  background-size: cover;
+}
+
+.reservation-form {
+  width: 460px;
+  height: 500px;
+  padding: 24px 20px 28px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reservation-form__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.reservation-form__description {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.39;
+  margin-top: 14px;
+}
+
+.reservation-form__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reservation-form__form div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+}
+
+.reservation-form__form label {
+  width: 73px;
+  height: 13px;
+  margin-bottom: 7px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.reservation-form__form input,
+.reservation-form__form select {
+  display: block;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #d5d2d2;
+  padding: 5px 20px;
+}
+
+.reservation-form__form input::placeholder,
+.reservation-form__form select {
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+}
+
+.reservation-form__form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(https://i.postimg.cc/G3yB9R7L/hiclipart-com.png) no-repeat 93%
+    50%;
+  background-size: auto 15px;
+}
+
+.reservation-form__form select::-ms-expand {
+  display: none;
+}
+
+.reservation-form__form .submit-button {
+  margin-top: 32px;
+}
+
+.submit-button button {
+  background-color: #ff5a60;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.reservation-form__form .destination,
+.reservation-form__form .submit-button {
+  width: 100%;
+}
+
+.review {
+  padding: 40px 220px 60px 220px;
+}
+
+.review__title {
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+}
+
+.review__description {
+  font-size: 16px;
+  height: 40px;
+  padding-left: 28px;
+  margin-bottom: 20px;
+  line-height: 40px;
+  background: url(https://i.postimg.cc/d34bHRfw/ic-stars-24-px.jpg) no-repeat
+    left center;
+}
+
+.review__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-review {
+  width: 320px;
+}
+
+.user-review__place-img {
+  height: 220px;
+}
+
+.user-review__rating {
+  display: block;
+  margin: 22px 0 10px;
+}
+
+.user-review__rating i {
+  color: #018488;
+}
+
+.user-review__review {
+  font-size: 14px;
+  font-weight: 300;
+  height: 70px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.user-review__user-profile {
+  display: flex;
+  height: 42px;
+}
+
+.profile__img {
+  height: 100%;
+}
+
+.profile__name {
+  font-size: 14px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__name strong {
+  margin-bottom: 4px;
+}
