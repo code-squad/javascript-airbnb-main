@@ -27,7 +27,7 @@ body > main > h1 {
 }
 
 body > main > div.search {
-  background-image: url('img/bg.png');
+  background-image: url("img/bg.png");
   height: 620px;
   overflow: hidden;
 }
@@ -126,7 +126,7 @@ body > main > div.review {
 body > main > div.review::after {
   display: block;
   clear: left;
-  content: '';
+  content: "";
 }
 
 body > main > div.review > h3 {
@@ -135,9 +135,9 @@ body > main > div.review > h3 {
 }
 
 body > main > div.review > p::before {
-  content: '';
+  content: "";
   display: inline-block;
-  background: url('img/ic-stars-24-px.png');
+  background: url("img/ic-stars-24-px.png");
   width: 16px;
   height: 16px;
   padding: 2px;
@@ -177,7 +177,7 @@ body > main > div.review > ul > li > div.rating > span {
 }
 
 body > main > div.review > ul > li > div.rating > span::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   width: 100%;
