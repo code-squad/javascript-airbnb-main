@@ -135,24 +135,24 @@ div[aria-label="review"] {
   justify-content: space-between;
 }
 
-.user-review {
+.review {
   width: 320px;
 }
 
-.user-review__place-img {
+.review__place-img {
   height: 220px;
 }
 
-.user-review__rating {
+.review__rating {
   display: block;
   margin: 22px 0 10px;
 }
 
-.user-review__rating i {
+.review__rating i {
   color: #018488;
 }
 
-.user-review__review {
+.review__review {
   font-size: 14px;
   font-weight: 300;
   height: 70px;
@@ -160,7 +160,7 @@ div[aria-label="review"] {
   margin-bottom: 10px;
 }
 
-.user-review__user-profile {
+.review__user-profile {
   display: flex;
   height: 42px;
 }
