@@ -1,0 +1,201 @@
+/* typography */
+$type-size-1: 1.75rem; // 28px
+$type-size-2: 1.25rem; // 20px
+$type-size-3: 1.125rem; // 18px
+$type-size-4: 0.875rem; // 14px
+$type-size-5: 0.7222222222rem; // 13px
+$type-size-6: 1.0666666667rem; // 15px
+$type-light: 300;
+
+/* color */
+$color-button: #ff5a60;
+$color-white: #fff;
+$color-border: #d5d2d2;
+
+$radius-offset: 4px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: none;
+}
+
+i,
+b {
+  font: {
+    weight: bold;
+    style: normal;
+  }
+}
+
+h1 {
+  font-size: 0;
+}
+
+div.search {
+  background-image: url("../img/bg.png");
+  height: 620px;
+  overflow: hidden;
+  form {
+    background-color: $color-white;
+    margin: {
+      top: 60px;
+      left: 220px;
+    }
+    padding: 24px 20px 28px 20px;
+    width: 420px;
+    height: 448px;
+    h2 {
+      margin-bottom: 14px;
+      font-size: $type-size-1;
+    }
+    p {
+      margin-bottom: 20px;
+      font: {
+        size: $type-size-3;
+        weight: $type-light;
+      }
+      line-height: 1.39;
+    }
+    div.input-container {
+      display: flex;
+      flex-wrap: wrap;
+      div {
+        flex-basis: 50%;
+        font: {
+          size: $type-size-5;
+          weight: bold;
+        }
+        &.destination {
+          flex-basis: 100%;
+        }
+        label {
+          display: block;
+          margin-bottom: 7px;
+        }
+        input {
+          box-sizing: border-box;
+          width: 100%;
+          height: 40px;
+          border: solid 1px $color-border;
+          border-radius: $radius-offset;
+          text-indent: 19px;
+          margin-bottom: 21px;
+          &::placeholder {
+            color: #000;
+            font-weight: bold;
+          }
+        }
+        &.adult,
+        &.child {
+          position: relative;
+          img {
+            position: absolute;
+            width: 33px;
+            right: 13px;
+            bottom: 24px;
+          }
+        }
+      }
+      button {
+        cursor: pointer;
+        flex-basis: 100%;
+        margin-top: 10px;
+        height: 40px;
+        background-color: $color-button;
+        color: $color-white;
+        font-size: $type-size-6;
+        font-weight: bold;
+        border: solid 1px $color-border;
+        border-radius: $radius-offset;
+      }
+    }
+  }
+}
+
+div.review {
+  padding: 40px 220px 60px;
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+  h3 {
+    font-size: $type-size-2;
+    margin-bottom: 8px;
+  }
+  & > p {
+    display: inline-block;
+    font-size: $type-size-3;
+    line-height: 25px;
+    margin-bottom: 20px;
+    &::before {
+      content: "";
+      display: inline-block;
+      background: url("../img/ic-stars-24-px.png");
+      width: 16px;
+      height: 16px;
+      padding: 2px;
+      margin: -4px 4px -4px 0px;
+    }
+  }
+  li {
+    float: left;
+    width: 320px;
+    & + li {
+      margin-left: 20px;
+    }
+    img {
+      margin-bottom: 22px;
+    }
+    div.rating {
+      margin-bottom: 10px;
+      span {
+        margin-right: 4px;
+        margin-bottom: 10px;
+        padding: 0 9px;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 18px;
+          background: url(../img/star-24px.svg) no-repeat center;
+        }
+      }
+    }
+    p {
+      font-size: $type-size-4;
+      font-weight: $type-light;
+      display: block;
+      height: 70px;
+    }
+  }
+}
+
+div.profile {
+  * {
+    display: block;
+    font-size: $type-size-4;
+  }
+  img {
+    float: left;
+    padding-right: 10px;
+  }
+  span {
+    font-weight: $type-light;
+  }
+}
