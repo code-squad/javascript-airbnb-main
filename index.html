@@ -4,107 +4,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Airbnb</title>
   </head>
   <body>
     <main>
       <div class="search">
         <form action="#">
-          <h2>에어비앤비에서 한국의 숙소를 찾아보세요</h2>
-          <h3>
-            혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체 숙소까지,
-            에어비앤비엔 다 있습니다.
-          </h3>
+          <div class="search-title">
+            <h2>에어비앤비에서 한국의 숙소를 찾아보세요</h2>
+          </div>
+          <div class="search-content">
+            <p>
+              혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체 숙소까지,
+              에어비앤비엔 다 있습니다.
+            </p>
+          </div>
           <div>
             <label for="destination">목적지</label>
             <input type="text" id="destination" placeholder="모든 위치" />
           </div>
-          <div>
-            <label for="checkin">체크인</label>
-            <input type="date" id="checkin" placeholder="년/월/일" />
+          <div class="input-date">
+            <div>
+              <label for="checkin">체크인</label>
+              <input type="date" id="checkin" placeholder="년/월/일" />
+            </div>
+            <div>
+              <label for="checkout">체크아웃</label>
+              <input type="date" id="checkout" placeholder="년/월/일" />
+            </div>
           </div>
-          <div>
-            <label for="checkout">체크아웃</label>
-            <input type="date" id="checkout" placeholder="년/월/일" />
-          </div>
-          <div>
-            <label for="adult">어른</label>
-            <select name="adult" id="adult">
-              <option value="" disabled selected>어른 0명</option>
-              <option value="one">1</option>
-              <option value="two">2</option>
-              <option value="three">3</option>
-              <option value="four">4</option>
-            </select>
-          </div>
-          <div>
-            <label for="child">어린이</label>
-            <select name="child" id="child">
-              <option value="" disabled selected>어린이 0명</option>
-              <option value="one">1</option>
-              <option value="two">2</option>
-              <option value="three">3</option>
-              <option value="four">4</option>
-            </select>
+          <div class="input-select">
+            <div>
+              <label for="adult">어른</label>
+              <select name="adult" id="adult">
+                <option value="" disabled selected>어른 0명</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+              </select>
+            </div>
+            <div>
+              <label for="child">어린이</label>
+              <select name="child" id="child">
+                <option value="" disabled selected>어린이 0명</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+              </select>
+            </div>
           </div>
           <button>검색</button>
         </form>
       </div>
       <div class="review">
         <h3>한국 숙소에 직접 다녀간 게스트의 후기</h3>
-        <h4>
-          한국의 숙소는 <span>31,500,000개</span> 이상의 후기에서 별 5개중 <span> 4.8개</span>를
-          받았습니다
-        </h4>
+        <div class="review-description">
+          <img src="img/ic-stars-24-px.png" alt="ic-star" />
+          <p>
+            한국의 숙소는 <span>31,500,000개</span> 이상의 후기에서 별 5개중 <span> 4.8개</span>를
+            받았습니다
+          </p>
+        </div>
         <ul>
           <li>
-            <img src="img/france.png" alt="프랑스" />
-            <span>☆</span>
-            <span>☆</span>
-            <span>☆</span>
-            <span>☆</span>
-            <div>
+            <img src="img/house-1.png" alt="프랑스" />
+            <div class="star-rating"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <p class="review-text">
               정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 2인이서
               숙박하는데에 최고의 장점을 보여주었습니다. 따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..
-            </div>
-            <img src="img/crong.png" alt="크롱" />
-            <div>
-              <div>Crong</div>
-              <div>프랑스</div>
-            </div>
-          </li>
-          <li>
-            <img src="img/austrailia.png" alt="호주" />
-            <span>☆</span>
-            <span>☆</span>
-            <span>☆</span>
-            <span>☆</span>
-            <span>☆</span>
-            <div>
-              Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히 차분하고 따스한 도시인
-              Cambria에 도착해서 Ammy의 집에 도착을 했습니다. Lucy와 Ammy는 기대이상으로 별로
-            </div>
-            <img src="img/honux.png" alt="호눅스" />
-            <div>
-              <div>honux</div>
-              <div>호주</div>
+            </p>
+            <div class="profile-text">
+              <img class="profile-img" src="img/crong.png" alt="크롱" />
+              <div>
+                <div class="profile-name">Crong</div>
+                <div>프랑스</div>
+              </div>
             </div>
           </li>
           <li>
-            <img src="img/korea.png" alt="한국" />
-            <span>☆</span>
-            <span>☆</span>
-            <span>☆</span>
-            <span>☆</span>
-            <div>
+            <img src="img/house-2.png" alt="호주" />
+            <div class="star-rating">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="review-text">
               Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히 차분하고 따스한 도시인
               Cambria에 도착해서 Ammy의 집에 도착을 했습니다. Lucy와 Ammy는 기대이상으로 별로
+            </p>
+            <div class="profile-text">
+              <img class="profile-img" src="img/honux.png" alt="호눅스" />
+              <div>
+                <div class="profile-name">honux</div>
+                <div>호주</div>
+              </div>
             </div>
-            <img src="img/jk.png" alt="jk" />
-            <div>
-              <div>JK</div>
-              <div>한국</div>
+          </li>
+          <li>
+            <img src="img/house-3.png" alt="한국" />
+            <div class="star-rating"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <p class="review-text">
+              Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히 차분하고 따스한 도시인
+              Cambria에 도착해서 Ammy의 집에 도착을 했습니다. Lucy와 Ammy는 기대이상으로 별로
+            </p>
+            <div class="profile-text">
+              <img class="profile-img" src="img/jk.png" alt="jk" />
+              <div>
+                <div class="profile-name">JK</div>
+                <div>한국</div>
+              </div>
             </div>
           </li>
         </ul>
