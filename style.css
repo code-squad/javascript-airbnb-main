@@ -57,35 +57,16 @@ body {
 #search_title {
     width: 420px;
     height: 62px;
-
-    vertical-align: middle;
-
     font-size: 24px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
-
     margin: 0;
 }
 
 #search_introduce {
     width: 412px;
     height: 60px;
-
-    padding-top: 14px;
-
     font-size: 16px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: normal;
-    color: #000000;
-    line-height: 1.39;
-
-    margin: 0
+    margin: 0;
+    padding-top: 14px;
 }
 
 .search_destination {
@@ -120,33 +101,17 @@ body {
     display: block;
     font-size: 13px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
-
-    margin: 0
-
-    /* padding: 0px 0px 7px 0px; */
+    margin: 0;
 }
 
 #search_button {
     width: 420px;
     height: 40px;
-    margin-top: 36px;
-    margin-left: 20px;
-
     font-size: 15px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
+    margin-top: 36px;
+    margin-left: 20px;
     color: #ffffff;
-
-    border: 0;
     border-radius: 4px;
     background-color: #ff5a60;
     border: solid 1px #d4d2d2;
@@ -188,27 +153,14 @@ body {
 .content_upper_main_title {
     width: 100%;
     padding-top: 40px;
-
     font-size: 20px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
 }
 
 .content_upper_sub_title {
     width: 100%;
-
     font-size: 18px;
     font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.39;
-    letter-spacing: normal;
-    color: #000000;
-
     line-height: 60px;
 }
 
@@ -239,13 +191,6 @@ body {
 .review {
     width: 320px;
     height: 70px;
-    font-size: 14px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
 }
 
 .user_information {
@@ -262,23 +207,9 @@ body {
 
 .name {
     padding-left: 52px;
-
-    font-size: 14px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
 }
 
 .nationality {
     padding-left: 52px;
-
-    font-size: 14px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
 }
