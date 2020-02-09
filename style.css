@@ -1,0 +1,114 @@
+@import "reset.css";
+@import "reviews.css";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,700&display=swap");
+
+.reservation {
+  height: 620px;
+  background: url(./images/bg.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+
+.reservation .reservation__inner {
+  position: relative;
+  height: inherit;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.reservation .reservation__content {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  margin-top: -250px;
+  padding: 24px 20px 28px;
+  width: 460px;
+  height: 500px;
+  background-color: #fff;
+}
+
+.reservation__content .reservation__title {
+  margin-bottom: 14px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.reservation__content .reservation__description {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.39;
+}
+
+.reservation__info .info__row {
+  margin-bottom: 21px;
+}
+
+.reservation__info .info__row.info__two-column {
+  display: flex;
+}
+
+.reservation__info .info__title {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.reservation__info .info__box {
+  width: 210px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #d5d2d2;
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.reservation__info .info__box.g-box {
+  width: 420px;
+}
+
+.reservation__info .info__box::placeholder,
+.reservation__info select,
+.reservation__info .info__title {
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* IE적용 */
+.reservation__info .info__box:-ms-input-placeholder {
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+}
+
+.reservation__info .info__btn {
+  margin-top: 11px;
+  background-color: #ff5a60;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 940px) {
+  .reviews__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .reviews__list .review {
+    width: 100%;
+  }
+  .review__room-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .reservation .reservation__content {
+    left: 0;
+    top: 0;
+    padding-top: 80px;
+    width: 100%;
+    margin: 0 auto;
+    height: 620px;
+  }
+}
