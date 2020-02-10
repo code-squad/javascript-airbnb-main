@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>airBnB에 오신것을 환영합니다.</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/b034428760.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="airbnb-wrap">
+    <!--    상단-->
+    <section class="main-section">
+        <div class="main-center-box">
+            <div class="hotel-search-section">
+                    <form action="#" method="POST" class="hotel-search-form">
+                <h3 class="hotel-search-title">에어비앤비에서 한국의 숙소를 찾아보세요</h3>
+                <p class="hotel-search-info">혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체 숙소까지, 에어비앤비엔 다 있습니다.</p>
+                <fieldset class="hotel-search-fieldset">
+                    <legend>숙소예약</legend>
+                    <div class="hotel-search-input-section">
+                        <div class="destination-section">
+                            <label for="destination">목적지</label>
+                            <input type="text" id="destination" value="" placeholder="　모든 위치">
+                        </div>
+                        <div class="checkin-checkout-section">
+                            <div class="checkin-section">
+                                <label for="checkin">체크인</label>
+                                <input type="text" id="checkin" value="" placeholder="　년/월/일">
+                            </div>
+                            <div class="checkout-section">
+                                <label for="checkout">체크아웃</label>
+                                <input type="text" id="checkout" value="" placeholder="　년/월/일">
+                            </div>
+                        </div>
+                        <div class="check-age-section">
+                            <div class="adult-age-section">
+                                <label for="adult">어른</label>
+                                <select id="adult">
+                                    <option>어른 1명</option>
+                                    <option>어른 2명</option>
+                                    <option>어른 3명</option>
+                                </select>
+                            </div>
+                            <div class="child-age-section">
+                                <label for="child">어린이</label>
+                                <select id="child">
+                                    <option>어린이 0명</option>
+                                    <option>어린이 1명</option>
+                                    <option>어린이 2명</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <input type="submit" value="검색" class="hotel-search-submit">
+            </form>
+                </div>
+        </div>
+    </section>
+
+
+    <!--하단-->
+    <div class="review-section">
+        <div class="review-center-box">
+            <div class="review-title-wrapper">
+                <div class="review-title">한국 숙소에 직접 다녀간 게스트의 후기</div>
+                <span class="review-subtitle-wrapper">
+                        <img class="review-subtitle-star" src="picture/star.png" alt="">
+                        <span class="review-subtitle">한국의 숙소는 <span class="bold">31,500,000</span>개 이상의 후기에서 별 5개중 <span
+                                class="bold">4.8개</span>를 받았습니다</span>
+                    </span>
+            </div>
+            <div class="review-list">
+                <span class="review-item">
+                    <img class="review-item-picture" src="./picture/france.png" alt="">
+                    <span class="review-item-star-nums>">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                    </span>
+                    <div class="review-item-description">정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..</div>
+                    <span class="reviewer-wrapper">
+                        <img class="reviewer-picture" src="picture/crong.png" alt="">
+                        <div class="reviewer-name-wrapper">
+                            <div class="reviewer-name">crong</div>
+                            <div class="reviewer-nation">프랑스</div>
+                        </div>
+                    </span>
+                </span>
+                <span class="review-item">
+                    <img class="review-item-picture" src="picture/Australia.png" alt="">
+                    <span class="review-item-star-nums>">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                    </span>
+                    <div class="review-item-description">Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히 차분하고 따스한 도시인 Cambria에 도착해서 Ammy의 집에 도착을 했습니다. Lucy와 Ammy는 기대이상으로 별로</div>
+                    <span class="reviewer-wrapper">
+                        <img class="reviewer-picture" src="picture/honux.png" alt="">
+                        <div class="reviewer-name-wrapper">
+                            <div class="reviewer-name">honix</div>
+                            <div class="reviewer-nation">호주</div>
+                        </div>
+                    </span>
+                </span>
+                <span class="review-item">
+                    <img class="review-item-picture" src="picture/korea.png" alt="">
+                    <span class="review-item-star-nums>">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                    </span>
+                    <div class="review-item-description">산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무 좋았다. 사진과 같이 깔끔하고 지내기에 불편함이 없었다. 호스트 역시 친절하고 따뜻하게 대해주었습니다.</div>
+                    <span class="reviewer-wrapper">
+                        <img class="reviewer-picture" src="picture/jk.png" alt="">
+                        <div class="reviewer-name-wrapper">
+                            <div class="reviewer-name">JK</div>
+                            <div class="reviewer-nation">한국</div>
+                        </div>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
