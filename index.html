@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class='reservation__section'>
+            <form action="#" class="reservation__form">
+                <h2>에어비앤비에서 한국의 숙소를 찾아보세요</h2>
+                <p>혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체 숙소까지, 에어비앤비엔 다 있습니다.</p>
+                <label class='destination' for="destination">목적지
+                    <input type="text" class='destination' placeholder="모든 위치">
+                </label>
+                <section class="choose_date">
+                    <label class='checkIn' for="checkIn">체크인
+                        <input type="date" name="checkOut" id="checkOut">
+                    </label>
+                    <label class='checkOut' for="checkOut">체크아웃
+                        <input type="date" name="checkOut" id="checkOut">
+                    </label>
+                </section>
+                <section class="choose_kindofpeople">
+                    <label class='adult' for="adult">어른
+                        <select name="adult" id='adult'>
+                                <option value="adult">어른 0명</option>
+                        </select>
+                    </label>
+                    <label class='child' for="child">어린이
+                        <select name="child" id='child'>
+                                <option value="child">어린이 0명</option>
+                        </select>
+                    </label>
+
+                </section>
+                <button class='submit__btn'>검색</button>
+            </form>
+        </section>
+        <section class='review__section'>
+                <h3>한국 숙소에 직접 다녀간 게스트의 후기</h3>
+                <div class="review__intro">
+                    <img class='review__star' src="./airbnb/ic-stars-24-px@3x.jpg" alt="">
+                    <span class='review__intro__title'>한국의 숙소는 31,500,000개 이상의 후기에서 별 5개중 4.8개를 받았습니다</span>
+                </div>
+
+                <ul class='review__section--list'>
+                    <li class='review__section__review'>
+                        <a href="#">
+                            <img src="./airbnb/rectangle@3x.jpg" alt="">
+                            <span class="reveiw__section__rating">★★★★★</span>
+                            <p>정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 
+                                2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..</p>
+                            <div class="review__section__user-review">
+                                <span><img src="./airbnb/oval@3x.jpg" alt=""></span>
+                                <p>
+                                    <span>Crong</span>
+                                    <span>프랑스</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="review__section__review">
+                        <a href="#">
+                            <img src="./airbnb/rectangle_2@3x.jpg" alt="">
+                            <span class="reveiw__section__rating">★★★★★</span>
+                            <p>Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히 차분하고 따스한 도시인 Cambria에 도착해서 Ammy의 집에 도착을 했습니다. Lucy와 Ammy는 기대이상으로 별로</p>
+                            <div class="review__section__user-review">
+                                <span><img src="./airbnb/oval_2@3x.jpg" alt=""></span>
+                                <p>
+                                    <span>Honux</span>
+                                    <span>호주</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="review__section__review">
+                        <a href="#">
+                            <img src="./airbnb/rectangle_3@3x.jpg" alt="">
+                            <span class="reveiw__section__rating">★★★★</span>
+                            <p>산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무 좋았다. 사진과 같이 깔끔하고 지내기에 불편함이 없었다. 호스트 역시 친절하고 따뜻하게 대해주었습니다.</p>
+                            <div class="review__section__user-review">
+                                <span><img src="./airbnb/oval_3@3x.jpg" alt=""></span>
+                                <p>
+                                    <span>JK</span>
+                                    <span>한국</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+        </section>
+    </main>
+</body>
+</html>
