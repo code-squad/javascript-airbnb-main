@@ -4,86 +4,115 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>JS Bin</title>
+    <title>airbnb-clone</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="airbnb.css">
 </head>
 
 <body>
-    <div>
-        <div>
-            <img src="rectangle.png" alt="배경사진" />
-        </div>
-        <div>
-            <section>
-                <h1>에어비앤비에서 숙소, 호텔 등을 예약하세요.</h1>
-                <span>혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체 숙소까지, 에어비엔비엔 다 있습니다.</span>
-            </section>
-        </div>
-        <div>
-            <form action="#">
-                <div>
-                    <label for="">목적지</label><br>
-                    <input type="text" placeholder="모든 위치">
-                </div>
-                <div>
+    <div class="topContainer">
+        <div class="searchBox">
+            <div>
+                    <h1>에어비앤비에서 한국의 숙소를 찾아보세요.</h1>
+                    <p class="contentText">혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체 숙소까지, 에어비엔비엔 다 있습니다.</p>
+            </div>
+            <div>
+                <form action="#">
                     <div>
-                        <label for="">체크인</label><br>
-                        <input type="date">
+                        <p class="label"><label for="">목적지</label></p>
+                        <input class="destinationInput" type="text" placeholder="모든 위치">
                     </div>
-                    <div>
-                        <label for="">체크아웃</label><br>
-                        <input type="date">
+                    <div class="checkInOut">
+                        <div class="">
+                            <p class="label"><label for="">체크인</label></p>
+                            <input type="text" placeholder="년/월/일">
+                        </div>
+                        <div class="">
+                            <p class="label"><label for="">체크아웃</label></p>
+                            <input type="text" placeholder="년/월/일">
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <label for="">어른</label><br>
-                        <select name="adult" id="">
-                            <option selected value="0">성인 0명</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="">어린이</label><br>
-                        <select name="child" id="">
-                            <option selected value="0">어린이 0명</option>
-                        </select>
+                    <div class="selectPerson">
+                        <div>
+                            <p class="label"><label for="">어른</label></p>
+                            <select name="adult" id="">
+                                <option selected value="0">성인 0명</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p class="label"><label for="">어린이</label></p>
+                            <select name="child" id="">
+                                <option selected value="0">어린이 0명</option>
+                            </select>
+                        </div>
                     </div>
                     <button>검색</button>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
     <!-- 아랫부분 -->
-    <div>
-        <div>한국 숙소에 직접 다녀간 게스트의 후기</div>
-        <img src="ic-stars-24-px.png" alt="ic_star" />
-        <span>한국의 숙소는 31,500,000개 이상의 후기에서 별 5개중 4.8개를 받았습니다</span>
-
+    <div class="review">
+        <div class="review_title">
+            <div>
+        <h3>한국 숙소에 직접 다녀간 게스트의 후기</h3>
+    </div>
+        <div class="icon_text">
+            <span class="star_icon"><img src="ic-stars-24-px.png" alt="ic_star" /></span>
+            <span class="text_explain">한국의 숙소는 <span class="bold_text">31,500,000개</span> 이상의 후기에서 별 5개중 <span
+                    class="bold_text">4.8개</span>를 받았습니다</span>
+        </div></div>
         <ul>
             <li>
-                <img src="rectangle@2x (2).png" alt="1">
-                <div>★★★★★</div>
-                <div>정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..
+                <div class="review_photo"><img src="rectangle (2).png" alt="1"></div>
+                <span class="star">
+                    <span>★</span><span>★</span><span>★</span><span>★</span>
+                </span>
+                <div class="review_text">정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 따뜻한 물은
+                    24시간 펑펑펑 쏟아져 나오더라..</div>
+                <div class="profile_box">
+                    <div class="profile_photo">
+                        <img src="oval.png" alt="profile1">
+                    </div>
+                    <div class="profile">Crong<div class="profile_name">프랑스</div>
+                    </div>
                 </div>
-                <img src="oval.png" alt="profile1">
-                <div>Crong <br>프랑스</div>
             </li>
             <li>
-                <img src="rectangle@2x (3).png" alt="2">
-                <div>★★★★★</div>
-                <div>Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히 차분하고 따스한 도시인 Cambria에 도착해서 Ammy의 집에 도착을 했습니다. Lucy와 Ammy는
+                <div class="review_photo"><img src="rectangle (3).png" alt="2"></div>
+                <span class="star">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </span>
+                <div class="review_text">Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히 차분하고 따스한 도시인 Cambria에 도착해서 Ammy의 집에 도착을
+                    했습니다. Lucy와 Ammy는
                     기대이상으로 별로</div>
-                <img src="oval (2).png" alt="profile2">
-                <div>honux<br>호주</div>
+                <div class="profile_box">
+                    <div class="profile_photo">
+                        <img src="oval (2).png" alt="profile2">
+                    </div>
+                    <div class="profile">honux<div class="profile_name">호주</div>
+                    </div>
+                </div>
             </li>
             <li>
-                <img src="rectangle@2x (4).png" alt="3">
-                <div>★★★★★</div>
-                <div>산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무 좋았다. 사진과 같이 깔끔하고 지내기에 불편함이 없었다. 호스트 역시 친절하고 따뜻하게 대해주었습니다.</div>
-                <img src="oval (3).png" alt="profile3">
-                <div>JK<br>한국</div>
+                <div class="review_photo"><img src="rectangle (4).png" alt="3"></div>
+                <div class="star">
+                    <span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <div class="review_text">산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무 좋았다. 사진과 같이 깔끔하고 지내기에 불편함이 없었다. 호스트 역시 친절하고
+                    따뜻하게 대해주었습니다.</div>
+                <div class="profile_box">
+                    <span class="profile_photo">
+                        <img src="oval (3).png" alt="profile3">
+                    </span>
+                    <div class="profile">JK<div class="profile_name">한국</div>
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
+
+   
 
 </body>
 

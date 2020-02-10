@@ -1,0 +1,243 @@
+body {
+    width: 1440px;
+    height: 1200px;
+    margin: 0 auto;
+    font-family: AppleSDGothicNeo;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+
+}
+
+.topContainer {
+    width: 100%;
+    height: 620px;
+    background-image: url("rectangle.png");
+    background-size: cover;
+    position: flex;
+    flex-direction: column;
+}
+
+.searchBox {
+    width: 460px;
+    height: 500px;
+    background-color: #ffffff;
+    position: relative;
+    top: 60px;
+    left: 220px;
+    padding-top: 24px;
+}
+h1{
+    width: 420px;
+    height: 62px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.contentText{
+    width: 413px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.39;
+    margin-top: 14px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+form{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.label{
+    width: 73px;
+    height: 13px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+input, select {
+    border-radius: 4px;
+    border: solid 1px #d5d2d2;
+    background-color: #ffffff;
+    width: 210px;
+    height: 40px;
+    padding: 0; /* 기본으로 들어간 padding 값 제거 */
+    box-sizing: border-box;
+    font-family: AppleSDGothicNeo;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+select{
+    padding: 0 20px;
+}
+input::placeholder {
+    width: 170px;
+    height: 31px;
+    padding-left: 20px;
+    color: #000000;
+}
+.destinationInput {
+    width: 420px;
+    height: 40px;
+}
+.checkInOut {
+    display: flex;
+    flex-direction: row;
+    margin-top: 21px;
+}
+.selectPerson {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+button{
+    width: 420px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #d5d2d2;
+    background-color: #ff5a60;
+    font-family: AppleSDGothicNeo;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 32px;
+}
+.review {
+    
+    /* position: absolute;
+    top: 660px;
+    left: 220px;
+    right: 220px; */
+}
+h3{
+    width: 460px;
+  height: 40px;
+  font-family: AppleSDGothicNeo;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  vertical-align: middle;
+}
+.star_icon{
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+.text_explain{
+    width: 650px;
+    height: 40px;
+    font-weight: 300;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.39;
+    letter-spacing: normal;
+    color: #000000;
+}
+.bold_text{
+    font-weight: bold;
+}
+li{
+    flex-direction: column;
+}
+
+li:nth-child(2){
+    margin: 0 20px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 22px;
+
+}
+.review_photo{
+    width: 320px;
+    height: 220px;
+    object-fit: contain;
+    border: solid 1px #979797;
+    margin-bottom: 10px;
+}
+.star{
+    font-size: 28px;
+    width: 22px;
+    height: 22px;
+    color: #018488;  
+    padding-bottom: 10px;
+}
+.star>span{
+  
+}
+.review_text{
+    width: 320px;
+    height: 70px;
+    font-family: AppleSDGothicNeo;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    margin-top: 10px;
+}
+.profile_photo{
+    width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+.profile{
+  width: 110px;
+  height: 33px;
+  font-family: AppleSDGothicNeo;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  margin: 10px;
+}
+.profile_name{
+    font-weight: 300;
+}
+.profile_box{
+    display : flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.icon_text{
+    /* display: flex;
+    flex-direction: row; */
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
+.review_title{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 220px;
+}
