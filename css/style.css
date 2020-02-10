@@ -1,0 +1,251 @@
+@charset "utf-8";
+.wrap {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  min-width: 1440px;
+  padding: 0 220px;
+}
+
+/* section - 1 */
+.reservation_wrap {
+  position: relative;
+  height: 620px;
+  background-size: 100%;
+  background: url(../images/bg.jpg) 50% 50%;
+}
+
+.reservation {
+  position: absolute;
+  top: 50%;
+  margin-top: -250px;
+  padding: 24px 20px;
+  width: 460px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.reservation_desc {
+  margin-bottom: 20px;
+}
+.reservation_desc > h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.reservation_desc > p {
+  
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 300;
+}
+
+.reservation_form {
+  margin-bottom: 20px;
+}
+.reservation_form legend {
+  height: 0;
+  text-indent: -9999px;
+  color: transparent;
+}
+
+.destination_wrap {
+
+}
+
+.reservation_form label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 13px;
+}
+
+.reservation_form input,
+.reservation_form select {
+  margin-bottom: 24px;
+  padding: 0 20px;
+  width: 100%;
+  height: 40px;
+  font-size: 13px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.check_wrap,
+.number_of_people {
+  display: flex;
+}
+.check_wrap .check_common,
+.number_of_adult_wrap,
+.number_of_child_wrap {
+  width: 50%;
+  justify-content: space-between;
+}
+
+.check_common {
+  position: relative;
+}
+
+.check_common input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  margin-left: -20px;
+  width: calc(100% - 10px);
+  height: calc(50% - 10px);
+  color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+/* 삭제 예정(편법 사용.. 캘린더의 x표시와 위아래 화살표 변경 방법 찾아보기) */
+.check_common input::after {
+  display: block;
+  content: '';
+  position: absolute;
+  right: 6px;
+  width: 50px;
+  height: calc(30% - 10px);
+  background-color: #fff;
+}
+.number_of_people select {
+  background: url("https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat;
+  background-position: calc(100% - 20px) center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+   -ms-appearance: none;
+       appearance: none;
+}
+
+.reservation_button {
+  width: 100%;
+  height: 40px;
+}
+.reservation_button button {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 15px;
+  background: #ff5a60;
+  border-radius: 3px;;
+  cursor: pointer;
+}
+
+/* section - 2 */
+.review_wrap {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.review_desc {}
+.review_desc h2,
+.review_desc p {
+  margin-bottom: 20px;  
+}
+
+.review_desc h2 {
+  font-size: 20px;
+}
+
+.review_desc p {
+  position: relative;
+  padding-left: 24px;
+}
+
+.review_desc p::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -12px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/stars.jpg);
+}
+
+.review_desc p strong {
+  font-weight: 700;
+}
+
+.review_container {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.review_container ul {
+  display: flex;
+  padding:10px;
+}
+
+.review_container ul li {
+  justify-content: space-between;
+}
+
+.rooms_img {
+  margin-bottom: 20px;
+}
+
+.rooms_img a {
+  display: inline-block;
+}
+
+.rooms_img a img {
+  width: 100%;
+  height: auto;
+}
+
+.review_score {
+  margin-bottom: 16px;
+}
+
+.review_score i {
+  color: #018488;
+}
+
+.review_contents {
+  margin-bottom: 16px;
+  padding-right: 12px;
+  letter-spacing: 0.3px; /* 0.2로 주면 됨. 말줄임 테스트 용 */
+}
+
+.review_contents p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-align : justify; /* 텍스트 정리 */
+}
+
+.reviewer {
+  display: table;
+  clear: both;
+}
+
+.reviewer .reviewer_img {
+  float: left;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.reviewer .reviewer_img img {
+ 
+  height: 100%;
+}
+
+.reviewer_info {
+  overflow: hidden;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
