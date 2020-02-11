@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <div class="airbnb-icon">
+          <svg viewBox="0 0 1000 1000" role="img"><path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"></path></svg>
+        </div>
+        <nav class="nav-bar">
+          <ul class="nav-ul">
+            <li>호스팅 하기</li>
+            <li>도움말</li>
+            <li>회원 가입</li>
+            <li>로그인</li>
+          </ul>
+        </nav>
+        <div class="container">
+          <div class="select-form">          
+            <h1>에어비앤비에서 한국의 숙소를 찾아보세요</h1>
+            <p class="header-text">혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 집 전체 숙소까지, 에어비앤비엔 다 있습니다.</p>
+            <form>  <!-- form input --> 
+              <div class="row">
+                <p class="search-option">목적지</p>
+                <input type="text" class="input-destination" placeholder="모든위치">
+              </div>
+              <div class="row">
+                <div class="row-option">
+                  <p class="search-option">체크인</p>
+                  <input class="input-date" placeholder="년/월/일">
+                </div>
+                <div class="row-option">
+                  <p class="search-option">체크아웃</p>
+                  <input class="input-date" placeholder="년/월/일">
+                </div>
+              </div>
+              <div class="row">
+                <div class="row-option">
+                  <p class="search-option">어른</p>
+                  <select class="input-people" name="" id="">
+                    <option value="">어른 1명</option>
+                  </select>
+                </div>
+                <div class="row-option">
+                  <p class="search-option">어린이</p>
+                  <select class="input-people" name="" id="">
+                    <option value="">어린이 0명</option>
+                  </select>
+                </div>
+              </div>
+              <button id="btn-search" class="btn-search">검색</button>
+            </form>
+          </div>
+          <div class="header-hosting">
+            <div class="hosting-container">
+              <div>
+                <h3>Gyeongju에서 숙소 호스팅을 통해 월간 최대 <strong>##$_0D$##$1,484</strong>의 수익을 올려보세요.</h3>
+              </div>
+              <div>
+                <a href="">호스팅 하기</a>
+                <svg class="right-arrow" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height:15px;width:15px;display:block;fill:currentColor"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <section class="content">
+          <div class="content-upper">
+            <h2>한국 숙소에 직접 다녀간 게스트의 후기</h2>
+            <p>
+              <img class="star-img" src="./assets/img/ic-stars-24-px@2x.png" alt="">
+              한국의 숙소는 <strong>31,500,000개</strong> 이상의 후기에서 별 5개중 <strong>4.8개</strong>를 받았습니다
+            </p>
+          </div>
+          <div class="content-lower">
+            <ul class="content-ul">
+              <li>
+                <div class="room-img"><img src="./assets/img/rectangle_Img1@2x.png" alt=""></div>
+                <div class="rating">★★★★</div>
+                <div class="review">정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는 상쾌함이 좋았습니다. 2인이서 숙박하는데에 최고의 장점을 보여주었습니다. 따뜻한 물은 24시간 펑펑펑 쏟아져 나오더라..</div>
+                <div class="user-profile">
+                  <div class="user-img">
+                    <img src="./assets/img/oval@2x.png" alt="">
+                  </div>
+                  <div class="user_info">
+                    <span class="user-name">Crong</span>
+                    <span class="user-country">프랑스</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="room-img"><img src="./assets/img/rectangle_img2@2x.png" alt=""></div>
+                <div class="rating">
+                  <span class="star">★★★★★</span> 
+                </div>
+                <div class="review">Carmel을 떠나 1번 국도를 따라 멋진 풍경을 감상하고 굉장히 차분하고 따스한 도시인 Cambria에 도착해서 Ammy의 집에 도착을 했습니다. Lucy와 Ammy는 기대이상으로 별로</div>
+                <div class="user_profile">
+                  <div class="user-img">
+                    <img src="./assets/img/oval_2@2x.png" alt="">
+                  </div>
+                  <div class="user_info">
+                    <span class="user-name">Honux</span>
+                    <span class="user-country">호주</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="room-img"><img src="./assets/img/rectangle_img3.png" alt=""></div>
+                <div class="rating">★★★★</div>
+                <div class="review">산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무 좋았다. 사진과 같이 깔끔하고 지내기에 불편함이 없었다. 호스트 역시 친절하고 따뜻하게 대해주었습니다.</div>
+                <div class="user_profile">
+                  <div class="user-img">
+                    <img src="./assets/img/oval_3@2x.png" alt="">
+                  </div>
+                  <div class="user_info">
+                    <span class="user-name">JK</span>
+                    <span class="user-country">한국</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </divc>
+        </section>
+        <div class="service-content">
+          <section class="content">
+            <div>
+              <div class="airbnb-service">
+                <h1 class="margin-bottom-16px">에어비앤비와 함께하는 여행</h1>
+                <ul class="content-ul">
+                  <li>
+                    <div class="margin-bottom-16px">
+                      <svg style="height:40px;width:40px;display:block;overflow:visible" viewBox="0 0 24 24" fill="#60B6B5" fill-opacity="0" stroke="#60B6B5" stroke-width="1" focusable="false" aria-hidden="true" role="presentation" stroke-linecap="round" stroke-linejoin="round"><path d="m17.5 2.9c-2.1 0-4.1 1.3-5.4 2.8-1.6-1.6-3.8-3.2-6.2-2.7-1.5.2-2.9 1.2-3.6 2.6-2.3 4.1 1 8.3 3.9 11.1 1.4 1.3 2.8 2.5 4.3 3.6.4.3 1.1.9 1.6.9s1.2-.6 1.6-.9c3.2-2.3 6.6-5.1 8.2-8.8 1.5-3.4 0-8.6-4.4-8.6" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <h2>24시간 연중무휴 지원</h2>
+                    <span>24시간 언제라도 에어비앤비가 도와드립니다. 전 세계 어디에서든 에어비앤비 지원팀에 연락하여 언제든지 도움을 받으세요.</span>
+                  </li>
+                  <li>
+                    <div class="margin-bottom-16px">
+                      <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:40px;width:40px;display:block;fill:#60B6B5"><path d="m23.57 11.4-1.75-1.76-3.85-3.87-1.78-1.79-2.7-2.71-.82-.83-.22-.23-.06-.06c-.22-.22-.53-.22-.73-.02l-1.75 1.76-3.85 3.87-3.85 3.87-1.75 1.76a1.49 1.49 0 0 0 -.44 1.05v.01c0 .38.15.77.44 1.06l.55.55a1.49 1.49 0 0 0 2.01.08v8.4c0 .81.68 1.45 1.5 1.45h15c .82 0 1.5-.65 1.5-1.45v-8.4c.59.49 1.45.47 2.01-.08l.55-.55c.29-.29.44-.68.44-1.06v-.01c0-.38-.14-.77-.44-1.06zm-3.57 11.16c0 .24-.22.45-.5.45h-15c-.28 0-.5-.21-.5-.45v-9.36l8-7.99 8 7.99zm2.85-9.74-.55.55c-.2.2-.52.2-.71.01l-9.24-9.22a.5.5 0 0 0 -.71 0l-9.24 9.22a.5.5 0 0 1 -.71-.01l-.55-.55a.5.5 0 0 1 -.01-.71l1.75-1.76 3.85-3.87 3.85-3.87 1.4-1.4.77.77 2.7 2.71 1.78 1.79 3.85 3.87 1.75 1.76a.51.51 0 0 1 -.01.71z" fill-rule="evenodd"></path></svg>
+                    </div>
+                    <h2>글로벌 호스팅 기준</h2>
+                    <span>게스트는 숙박 후 매번 호스트에 대한 후기를 작성합니다. 에어비앤비의 모든 호스트는 일정 수준 이상의 별점을 받고 호스팅 기준을 준수해야 합니다.</span>
+                  </li>
+                  <li>
+                    <div class="margin-bottom-16px">
+                      <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:40px;width:40px;display:block;fill:#60B6B5"><path d="m15.37 13.54-.01.01a.53.53 0 0 0 .01-.01m-.37 9.46h-11.5c-.28 0-.9-.22-1.38-.58-.71-.52-1.12-1.31-1.12-2.42 0-.04 0-.07.01-.11.09-1.1 1.59-2.44 4.02-3.79a33.14 33.14 0 0 1 2.9-1.42 35.57 35.57 0 0 1 1.31-.54c.63-.26.71-.95.18-1.35a4.55 4.55 0 0 1 -.38-.31 7.1 7.1 0 0 1 -.84-.9c-.73-.92-1.17-1.96-1.2-3.09v-2.99c.07-2.36 2.38-4.5 5.04-4.5 2.67 0 4.96 2.14 4.96 4.5v3c0 1.13-.43 2.17-1.15 3.11a7.35 7.35 0 0 1 -1.09 1.13l-.08.07c-.02.02-.02.02-.05.05s-.03.03-.09.14c-.05.47-.05.47.46.7a.49.49 0 0 0 .36-.15l.06-.05a8.32 8.32 0 0 0 1.23-1.28c.84-1.1 1.35-2.35 1.35-3.72v-3c0-2.92-2.75-5.5-5.96-5.5-3.2 0-5.96 2.56-6.04 5.49v3.01c.03 1.38.56 2.62 1.42 3.71.31.39.63.73.96 1.03.06.05.1.08.15.12a34.28 34.28 0 0 0 -3.98 1.87c-2.73 1.51-4.41 3.02-4.54 4.58a2.41 2.41 0 0 0 -.01.19c0 2.55 1.91 3.99 3.5 4h11.5a.5.5 0 1 0 0-1m7.67-4.22c-.36.74-.97 1.55-1.78 2.38a20.33 20.33 0 0 1 -1.89 1.71 19.94 19.94 0 0 1 -1.89-1.71c-.81-.83-1.42-1.64-1.78-2.38-.22-.45-.33-.86-.33-1.23 0-.99.61-1.56 1.43-1.56.7 0 1.55.53 2.18 1.31a.5.5 0 0 0 .78 0c .63-.78 1.48-1.31 2.18-1.31.82 0 1.43.57 1.43 1.56 0 .36-.11.77-.33 1.23m-1.1-3.78c-.89 0-1.82.5-2.57 1.25-.75-.76-1.68-1.25-2.57-1.25-1.36 0-2.43 1.01-2.43 2.56 0 .53.15 1.08.43 1.66.41.85 1.09 1.74 1.96 2.64a21.09 21.09 0 0 0 2.31 2.05.5.5 0 0 0 .6 0 20.91 20.91 0 0 0 2.31-2.05c.87-.9 1.55-1.79 1.96-2.64.28-.58.43-1.13.43-1.66 0-1.55-1.07-2.56-2.43-2.56" fill-rule="evenodd"></path></svg>
+                    </div>
+                    <h2>별점 5점 호스트</h2>
+                    <span>깔끔하게 정돈된 침대 시트에서부터 브런치 맛집 정보까지, 에어비앤비 호스트는 현지인의 강점을 살린 다양한 서비스를 제공합니다.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="reservation-content">
+          <!-- 추가 할 영역 -->
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
