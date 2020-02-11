@@ -1,1 +1,1 @@
-# javascript-airbnb-main
+# Amazon Card UI Clone
