@@ -1,0 +1,155 @@
+body,html,* {
+    box-sizing: border-box;
+}
+main {
+    height: 100%;
+}
+.reservation__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(./airbnb/rectangle.jpg);
+    background-size: cover;
+    width: 1440px;
+    height: 620px;
+    padding :60px 760px 60px 220px
+}
+.reservation__section .reservation__form {
+        border-radius: 4px;
+        width: 460px;
+        height: 500px;
+        background-color: #ffffff;
+}
+.reservation__section .reservation__form p {
+        margin:5px 23px 5px 20px;
+        width: 437px;
+        height: 83px;    
+        padding-top: 20px;
+}
+
+.reservation__section h2 {
+    width: 420px;
+    height: 62px;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 24px 20px 26px 20px;
+    margin-bottom: 23px;
+}
+.reservation__section .reservation__form .destination {
+    width: 420px;
+    height: 40px;
+    margin:10px 21px 21px 19px;
+}
+
+.reservation__section .reservation__form section {
+    margin:10px 21px 20px 19px;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
+.reservation__section .reservation__form section label {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+}
+.reservation__section .reservation__form section label input,
+.reservation__section .reservation__form section label select
+ {  
+    margin-top: 3px;
+    height: 40px;
+}
+.reservation__section .reservation__form .submit__btn {
+    height: 40px;
+    width:420px;
+    border-radius: 4px;
+    border: solid 1px var(--pinkish-grey);
+    background-color: #ff5a60;
+    margin: 19px 20px 28px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;  
+}
+
+.review__section {
+    width: 1440px;
+    padding: 40px 220px 20px 220px;
+    display: flex;
+    flex-direction: column;
+}
+.review__section .review__intro{
+    display: flex;
+    justify-content: flex-start;
+}
+.review__section h3 {
+    width: 460px;
+    height: 40px;
+    font-family: AppleSDGothicNeo;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+.review__section .review__star {
+    width: 24px;
+    font-size: 16px;
+    height: 20px;
+    margin-right: 5px;
+}
+.review__section .review__intro__title {
+    letter-spacing: normal;
+    color: #000000;
+    width: 552px;
+    height: 40px;
+    font-family: AppleSDGothicNeo;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.39;
+}
+.review__section--list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.review__section__review {
+    width:320px;
+    height: 140px;
+}
+.review__section__review a > img {
+    width: 320px;
+    height: 220px;
+    margin-bottom: 22px;
+}
+
+.review__section__review a {
+    text-decoration: none;
+    color: #000000;
+}
+.review__section__review p {
+    width: 320px;
+    height: 70px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.review__section__user-review {
+    display: flex;
+    align-items: center;
+    height: 42px;
+}
+.review__section__user-review img {
+    height: 42px;
+    width: 42px;
+}
+.review__section__user-review p {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 110px;
+    height: 33px;
+    font-size: 14px;
+}
